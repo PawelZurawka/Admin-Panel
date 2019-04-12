@@ -11,7 +11,7 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
-    "build:clean": "rimraf css/*",
+    "build:clean": "rimraf css/*.*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PawelZurawka/Zadanie-7.7"
+    "url": "git+https://github.com/PawelZurawka/Zadanie-9"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PawelZurawka/Zadanie-7.7/issues"
+    "url": "https://github.com/PawelZurawka/Zadanie-9/issues"
   },
-  "homepage": "https://github.com/PawelZurawka/Zadanie-7.7#readme",
+  "homepage": "https://github.com/PawelZurawka/Zadanie-9#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
