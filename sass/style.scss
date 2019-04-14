@@ -2,10 +2,14 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import "basic-styles";
 
 /* Components */
 @import "components/form_field";
 @import "components/buttons";
+@import "components/icons";
+@import "components/containers";
+
 
 /* Sections */
 @import "sections/registration_form";

@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: $btn-font-size;
+    cursor: pointer;
+    padding: 13px 22px;
+    font-family: $font;
+    font-weight: $font-light;
+    color: #FFF;
+}
+
+.btn--primary {
+    background-color: $btn-primary;
+    &:hover {
+        background-color: $btn-primary-hover;
+    } 
+}
+
+.btn--secondary {
+    background-color: $btn-secondary;
+    &:hover {
+        background-color: $btn-secondary-hover;
+    } 
+}
+
+.btn--disabled {
+    background-color: $btn-disabled;
+}
+

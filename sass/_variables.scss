@@ -2,20 +2,20 @@
 $body-bg-color: #F5F5F2;
 $paragraph-color: #333;
 $brand-main-color: #ff0000;//wrong password
-$header-font-color: #a6a6a6;
+$main-font-color: #a6a6a6;//headers
 $section-bg-color: #FFF;
 $sidebar-bg-color: #191919;
 $sidebar-font-color: #999;
 $sidebar-font-color-hover: #FFF;
 $sidebar-bg-color-hover: #282828; //pomarańczowa lewa strona??
-$topbar-font-color: #9c9c9c;//and icons
+$topbar-font-color: #9c9c9c;
 $topbar-hover: #F5F5F2;
 $tabs-bg-color: #F3F3F1;
 $tabs-blue: #80BFCA;
 $tabs-orange: #FF9A38;
 $tabs-green: #59B66D;
-$links-color: #56819F;//one of three tabs color
-$links-color-hover: #FFA200;
+$link-color: #56819F;//one of three tabs color
+$link-color-hover: #FFA200;
 $btn-primary: #979797;
 $btn-primary-hover: #BABABA;
 $btn-secondary: #F58220;//and slider color
@@ -27,13 +27,14 @@ $positive-notification: #96CC9B;
 $positive-notification-hover: #74B67A;
 $negative-notification: #EC7171;
 $negative-notification-hover: #DE5252;
+$icon-color: #9c9c9c;
 //inputs??
 
 /* Font sizes */
 $paragraph-font-size: 14px;
 $header-font-size: 16px;//sidebar,section,large link
 $btn-font-size: 18px; //light
-$links-font-sm: 13px;
+$links-font-sm: 13px;//large 16px
 
 /* Fonts */
 $font: 'Roboto', sans-serif;//all content

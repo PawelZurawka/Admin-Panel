@@ -1,0 +1,29 @@
+/* BASIC STYLES */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: $body-bg-color;
+  }
+  
+  section {
+    background-color: $section-bg-color;
+    //padding??
+    //margin??
+  }
+  
+  h1, h2, h3, h4, h5, h6, ul, ol, p, a, div {
+    font-family: $font;
+    color: $main-font-color;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  p {
+    font-size: $paragraph-font-size;
+    color: $paragraph-color;
+  }
