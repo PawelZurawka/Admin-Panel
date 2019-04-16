@@ -2,28 +2,37 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
+    //padding??
     background-color: $body-bg-color;
+    font-family: $font;
+    padding-top: 82px;// 62px topbar+border 20px space between sections
   }
   
   section {
     background-color: $section-bg-color;
-    //padding??
-    //margin??
+    //padding: 30px; //????
+    margin-top: 18px;  //???
   }
   
   h1, h2, h3, h4, h5, h6, ul, ol, p, a, div {
     font-family: $font;
     color: $main-font-color;
+    //padding: 10px;
   }
   
   a {
     color: $link-color;
     text-decoration: none;
+    transition: 0.2s;
   }
 
   p {
     font-size: $paragraph-font-size;
     color: $paragraph-color;
+  }
+
+  li {
+    list-style: none;
   }

@@ -9,10 +9,11 @@
 @import "components/buttons";
 @import "components/icons";
 @import "components/containers";
-
+@import "components/links";
 
 /* Sections */
 @import "sections/registration_form";
+@import "sections/top-bar";
 
 /* Pages / Views */
 @import "pages/registration";

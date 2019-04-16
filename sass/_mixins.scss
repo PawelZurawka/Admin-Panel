@@ -1,0 +1,33 @@
+@mixin header-style {
+    font-family: $font;
+    font-size: $header-font-size;
+    color: $main-font-color;
+    margin: 0;
+}
+
+@mixin link-style-sm {
+    text-decoration: none;
+    color: $link-color;
+    font-size: $link-font-sm;
+    font-weight: $font-light;
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+@mixin link-style-lg {
+    text-decoration: none;
+    color: $link-color;
+    font-size: $link-font-lg;
+    font-weight: $font-light;
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+@mixin top-bar-hover {
+    transition: 0.4s;
+        &:hover {
+            color: #000;
+        }
+}

@@ -10,18 +10,14 @@
     font-style: normal;
 }
 
-.icon {
-    color: $icon-color;
-}
-
-[class*='icon--']:before{
-	display: inline-block;
-   font-family: 'Glyphter';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+[class*='icon--']:before {
+    display: inline-block;
+    font-family: 'Glyphter';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .icon--arrow-down:before{content:'\0041';}
 .icon--arrow-down-small:before{content:'\0042';}
@@ -51,3 +47,8 @@
 .icon--trash:before{content:'\005a';}
 .icon--url:before{content:'\0061';}
 .icon--wallet:before{content:'\0062';}
+
+.icon {
+    color: $icon-color;
+    transition: 0.4s;
+}

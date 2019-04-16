@@ -1,0 +1,7 @@
+.link--small {
+    @include link-style-sm
+}
+
+.link--large {
+    @include link-style-lg
+}

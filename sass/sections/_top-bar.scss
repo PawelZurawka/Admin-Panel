@@ -1,0 +1,104 @@
+.top-bar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    height: 60px; //62 but 2px is border
+    margin-top: 0;
+    margin-bottom: 0;
+    border: $border;
+    color: $icon-color;
+    //padding-right: 15px;
+
+    &__button {
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: #FFF;
+        transition: 0.4s;
+        &:hover {
+            background-color: $menu-buttons-hover;
+        }
+        &:hover i {
+            color: #000;
+        }  
+    }
+
+    &__wallet {
+    border-left: $border;
+    border-right: $border;
+    }
+
+    &__wallet-button {
+        padding: 18px;
+    }
+
+    &__wallet-icon {
+        font-size: 18px;
+    }
+
+    &__money {
+        font-size: 20px;
+        color: $topbar-font-color;
+        padding: 18px;
+        @include top-bar-hover;
+    }
+
+    &__arrow-icon {
+        font-size: 12px;
+    }
+
+    &__notification {
+        border-right: $border;
+    }
+
+    &__notification-button {
+        padding: 20px;
+        position: relative;
+    }
+
+    &__notification-icon {
+        font-size: 17px;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: $btn-secondary;
+            border-radius: 50%;
+            top: 17px;
+            right: 20px;
+        }
+    }
+    
+    &__profile {
+        border-right: $border;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background-color: $menu-buttons-hover;
+        }
+        &:hover i {
+            color: #000;
+        }  
+    }
+
+    &__profile-icon {
+        font-size: 17px;
+    }
+
+    &__profile-name {
+        padding-left: 12px;
+        text-transform: capitalize;
+    }
+
+    &__quit-button {
+        padding: 20px;
+    }
+
+    &__quit-icon {
+        font-size: 19px;
+    }
+}

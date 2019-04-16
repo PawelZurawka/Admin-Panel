@@ -1,0 +1,19 @@
+.section__header-wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border-bottom: $border;
+    //width 100%??
+}
+
+.section__header-title {
+    @include header-style;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    padding-left: 18px;
+}
+
+.section__header-description {
+    @include header-style;
+    font-weight: $font-bold;
+}
