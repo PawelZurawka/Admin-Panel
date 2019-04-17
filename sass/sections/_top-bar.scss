@@ -19,7 +19,7 @@
         &:hover {
             background-color: $menu-buttons-hover;
         }
-        &:hover i {
+        &:hover i, &:hover span {
             color: #000;
         }  
     }
@@ -40,9 +40,10 @@
     &__money {
         font-size: 20px;
         color: $topbar-font-color;
+        font-weight: $font-medium;
         padding-left: 14px;
         padding-right: 15px;
-        @include top-bar-hover;
+        transition: 0.4s;
     }
 
     &__arrow-icon {
@@ -60,7 +61,7 @@
 
     &__notification-icon {
         font-size: 17px;
-        &:after {
+        &::after {
             position: absolute;
             content: "";
             width: 8px;
@@ -96,7 +97,7 @@
     }
 
     &__quit-button {
-        padding: 20px;
+        padding: 19px;
     }
 
     &__quit-icon {

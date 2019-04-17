@@ -24,10 +24,3 @@
         color: $link-color-hover;
     }
 }
-
-@mixin top-bar-hover {
-    transition: 0.4s;
-        &:hover {
-            color: #000;
-        }
-}

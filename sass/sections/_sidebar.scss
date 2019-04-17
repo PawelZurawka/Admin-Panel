@@ -1,0 +1,113 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 188px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $sidebar-bg-color;
+    color: $sidebar-font-color;
+
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        margin-left: 18px;
+        width: calc(100%-18px);
+    }
+
+    &__hamburger-icon {
+        font-size: 21px;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    &__menu-list {
+        margin: 0;
+        border-bottom: $border-sidebar;
+        padding-left: 0px;
+        //width: 100%;
+        //overflow: hidden;
+        padding-bottom: 24px;
+    }
+
+    &__list-item {
+        position: relative;
+        height: 42px;
+        font-size: $paragraph-font-size;
+    }
+
+    &__link {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding-left: 18px;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 4px;
+            background-color: $btn-secondary;
+            display: none;
+        }
+        &:hover, &:hover i {
+            color: $sidebar-font-color-hover;
+            background-color: $sidebar-bg-color-hover;
+            &::before {
+                display: inline;
+            }
+        }
+    }
+    &__icon {
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    &__manager-header {
+        text-transform: uppercase;
+        color: #808080;
+        margin-left: 18px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: $paragraph-font-size;
+        font-weight: $font-medium;
+    }
+
+    &__manager-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+
+    &__manager-photo {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: $marked-checkbox;
+            top: 0;
+            left: 32px;
+        }
+    }
+
+    &__manager-name {
+        @include link-style-lg;
+        transition: 0.2s;
+        text-transform: capitalize;
+        margin-left: 10px;
+        font-size: $paragraph-font-size;
+    }
+}
