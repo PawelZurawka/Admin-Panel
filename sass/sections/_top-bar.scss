@@ -40,7 +40,8 @@
     &__money {
         font-size: 20px;
         color: $topbar-font-color;
-        padding: 18px;
+        padding-left: 14px;
+        padding-right: 15px;
         @include top-bar-hover;
     }
 
