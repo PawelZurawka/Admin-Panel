@@ -6,8 +6,10 @@
     height: 60px; //62 but 2px is border
     margin-top: 0;
     margin-bottom: 0;
+    overflow: hidden;
     border: $border;
     color: $icon-color;
+    background-color: $section-bg-color;
     //padding-right: 15px;
 
     &__button {
@@ -78,7 +80,7 @@
         display: flex;
         padding: 20px;
         align-items: center;
-        cursor: pointer;
+        cursor: pointer;//default??
         &:hover {
             background-color: $menu-buttons-hover;
         }

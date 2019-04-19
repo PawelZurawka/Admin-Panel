@@ -1,18 +1,18 @@
 button {
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .btn {
     display: inline-block;
-    border-radius: 3px;
-    border: none;
-    outline: none;
     font-size: $btn-font-size;
-    //cursor: pointer;
-    padding: 13px 22px;
+    padding: 11px 20px;
     font-family: $font;
     font-weight: $font-light;
     color: #FFF;
+    border-radius: 3px;
+    border: none;
+    outline: none;
 }
 
 .btn--primary {

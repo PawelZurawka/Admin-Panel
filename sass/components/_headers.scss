@@ -3,10 +3,10 @@
     align-items: center;
     height: 48px;
     border-bottom: $border;
-    //width 100%??
+    width: 100%;
 }
 
-.section__header-title {
+.section__header-name {
     @include header-style;
     font-weight: $font-medium;
     text-transform: uppercase;

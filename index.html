@@ -7,7 +7,6 @@
         <title>Zadanie 9</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -41,11 +40,11 @@
             <div class="sidebar">
                 <div class="sidebar__logo-wrapper">
                     <img class="sidebar__logo" src="images/logo.png" alt="logo">
-                    <i class="sidebar__hamburger-icon icon fa fa-bars"></i>
+                    <i class="sidebar__hamburger-icon icon icon-hamburger"></i>
                 </div>
                 <ul class="sidebar__menu-list">
                     <li class="sidebar__list-item">
-                        <a class="sidebar__link" href="#" id="general">
+                        <a class="sidebar__link" href="#general">
                             <i class="icon icon-general sidebar__icon"></i>
                             General
                         </a>
@@ -81,7 +80,7 @@
                         </a>
                     </li>
                     <li class="sidebar__list-item">
-                        <a class="sidebar__link" href="#" id="payout">
+                        <a class="sidebar__link" href="#" id="postback">
                             <i class="icon icon-postback sidebar__icon"></i>
                             Postback
                         </a>
@@ -98,5 +97,24 @@
                 </div>
             </div>
         </aside>
+        <section class="general-statistic">
+            <div class="general-statistic__wrapper container--fluid">
+                <div class="general-statistic__container container">
+                    <div class="general-statistic__header section__header-wrapper">
+                        <h3 class="general-statistic__header-name section__header-name">general statistic</h3>
+                    </div>
+                    <div class="general-statistic__date-selection">
+                        <div class="general-statistic__date-wrapper">
+                            <div class="general-statistic__date-from">16.05.2016</div>
+                            <div class="general-statistic__date-to">16.05.2016</div>
+                            <i class="icon icon-calendar general-statistic__icon"></i>
+                        </div>
+                        <button class="general-statistic__refresh-button btn btn--secondary">
+                            <i class="icon icon-refresh general-statistic__button-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
