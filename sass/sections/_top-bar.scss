@@ -10,7 +10,7 @@
     border: $border;
     color: $icon-color;
     background-color: $section-bg-color;
-    //padding-right: 15px;
+    padding-right: 0;
 
     &__button {
         height: 100%;
@@ -80,13 +80,19 @@
         display: flex;
         padding: 20px;
         align-items: center;
+        transition: 0.4s;
         cursor: pointer;//default??
         &:hover {
             background-color: $menu-buttons-hover;
         }
         &:hover i {
             color: #000;
-        }  
+        }
+        &:hover {
+            .top-bar__profile-name {
+                color: $link-color-hover;
+            }
+        }
     }
 
     &__profile-icon {
@@ -99,7 +105,7 @@
     }
 
     &__quit-button {
-        padding: 19px;
+        padding: 19px 20px 16px 21px;
     }
 
     &__quit-icon {

@@ -7,10 +7,11 @@
     //padding??
     background-color: $body-bg-color;
     font-family: $font;
-    padding-top: 82px;// 62px topbar+border 20px space between sections
+    padding-top: 86px;// 62px topbar+border 20px space between sections
   }
   
   section {
+    margin-bottom: 22px;
     //padding: 30px; //????
     //margin-top: 18px;  //???
   }

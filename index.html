@@ -97,22 +97,55 @@
                 </div>
             </div>
         </aside>
-        <section class="general-statistic">
-            <div class="general-statistic__wrapper container--fluid">
-                <div class="general-statistic__container container">
-                    <div class="general-statistic__header section__header-wrapper">
-                        <h3 class="general-statistic__header-name section__header-name">general statistic</h3>
+        <section class="general-statistic container--fluid">
+            <div class="general-statistic__container container">
+                <div class="general-statistic__header section__header-wrapper">
+                    <h3 class="general-statistic__header-name section__header-main">general statistic</h3>
+                </div>
+                <div class="general-statistic__date-selection">
+                    <div class="general-statistic__date-wrapper">
+                        <div class="general-statistic__date-from">16.05.2016</div>
+                        <div class="general-statistic__date-to">16.05.2016</div>
+                        <i class="icon icon-calendar general-statistic__icon"></i>
                     </div>
-                    <div class="general-statistic__date-selection">
-                        <div class="general-statistic__date-wrapper">
-                            <div class="general-statistic__date-from">16.05.2016</div>
-                            <div class="general-statistic__date-to">16.05.2016</div>
-                            <i class="icon icon-calendar general-statistic__icon"></i>
+                    <button class="general-statistic__refresh-button btn btn--secondary">
+                        <i class="icon icon-refresh general-statistic__button-icon"></i>
+                    </button>
+                </div>
+                <div class="general-statistic__table container--small row">
+                    <div class="general-statistic__single-row-wrapper row col-lg-6">
+                        <div class="general-statistic__small-header header-small col-lg-9">Visit Signups</div>
+                        <div class="general-statistic__stats col-lg-3">124</div>
+                    </div>
+                    <div class="general-statistic__single-row-wrapper row col-lg-6">
+                        <div class="general-statistic__small-header header-small col-lg-9">Net deposit</div>
+                        <div class="general-statistic__stats col-lg-3 ">564</div>
+                    </div>
+                    <div class="general-statistic__single-row-wrapper row col-lg-6">
+                        <div class="general-statistic__small-header header-small col-lg-9">FTD</div>
+                        <div class="general-statistic__stats col-lg-3">445</div>
+                    </div>
+                    <div class="general-statistic__single-row-wrapper row col-lg-6">
+                        <div class="general-statistic__small-header header-small col-lg-9">Turn over</div>
+                        <div class="general-statistic__stats col-lg-3">432</div>
+                    </div>
+                </div>
+                <div class="general-statistic__chart container--small">
+                    <div class="general-statistic__chart-header">
+                        <h5 class="header-small">Earnings chart</h5>
+                    </div>
+                    <div class="general-statistic__chart-buttons">
+                        <div class="general-statistic__button-wrapper">
+                            <button class="general-statistic__chart-button general-statistic__chart-button-first btn">Signups</button>
                         </div>
-                        <button class="general-statistic__refresh-button btn btn--secondary">
-                            <i class="icon icon-refresh general-statistic__button-icon"></i>
-                        </button>
+                        <div class="general-statistic__button-wrapper">
+                            <button class="general-statistic__chart-button general-statistic__chart-button-second btn">FTD</button>
+                        </div>
+                        <div class="general-statistic__button-wrapper">
+                            <button class="general-statistic__chart-button general-statistic__chart-button-third btn">Earned</button>
+                        </div>
                     </div>
+                    <img src="images/chart.svg" alt="chart" class="general-statistic_chart-image">
                 </div>
             </div>
         </section>

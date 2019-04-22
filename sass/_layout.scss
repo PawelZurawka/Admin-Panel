@@ -1,4 +1,4 @@
-/* GRID*/
+/* GRID */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -28,4 +28,18 @@
   
 @media(min-width: 1200px) {
     @include grid('xl');
+}
+/* GRID OFFSET */
+@mixin grid-offset($prefix) {
+    @for $i from 1 through 12 {
+      .col-#{$prefix}-#{$i} {
+        $margin-left: 100% / 12 * $i;
+        flex: 0 0 $margin-left;
+        margin-left: $margin-left;
+      }
+    }
+}
+
+@media(min-width: 767px) {
+    @include grid-offset('offset');
 }

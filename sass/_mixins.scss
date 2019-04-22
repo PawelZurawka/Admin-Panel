@@ -24,3 +24,12 @@
         color: $link-color-hover;
     }
 }
+
+@mixin before-chart-buttons {
+    position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        left: 10px;
+}

@@ -89,8 +89,14 @@
         align-items: center;
         justify-content: flex-start;
         cursor: pointer;
+        transition: 0.4s;
         &:hover {
             background-color: $sidebar-bg-color-hover;
+        }
+        &:hover {
+            .sidebar__manager-name {
+                color: $link-color-hover;
+            }
         }
     }
 

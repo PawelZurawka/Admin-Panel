@@ -6,14 +6,14 @@
     width: 100%;
 }
 
-.section__header-name {
+.section__header-main {
     @include header-style;
     font-weight: $font-medium;
     text-transform: uppercase;
     padding-left: 18px;
 }
 
-.section__header-description {
+.header-small {
     @include header-style;
     font-weight: $font-bold;
 }

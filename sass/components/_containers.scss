@@ -2,9 +2,8 @@
     width: 100%;
     max-width: 1056px;
     margin: 0 auto;
-    //padding-left: 15px;
-    //padding-right: 15px;
-    //padding: 15px;
+    //padding-left: 15px;??
+    //padding-right: 15px;??
     background-color: $section-bg-color;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
 }
@@ -12,13 +11,14 @@
 .container--fluid {
     width: calc(100% - 188px);
     margin-left: 188px; //sidebar
-    padding-left: 0; //15
-    padding-right: 0; //15
+    padding-left: 15px; //0?
+    padding-right: 15px; //0?
+
 }
 
 .container--small {
     width: 100%;
-    max-width: 714px; //+ paddingi?? +20px?
+    max-width: 688px; //714?+ paddingi?? +20px?
     margin: 0 auto;
     //padding? 10px or 0 5px
 }
