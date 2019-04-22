@@ -612,7 +612,7 @@ template {
 body {
   background-color: #F5F5F2;
   font-family: "Roboto", sans-serif;
-  padding-top: 86px;
+  padding-top: 80px;
 }
 
 section {
@@ -818,6 +818,7 @@ button {
 .icon {
   color: #9c9c9c;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .container {
@@ -871,7 +872,7 @@ button {
   width: 100%;
 }
 
-.section__header-main {
+.section__header-main-title {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #a6a6a6;
@@ -1253,7 +1254,7 @@ button {
 }
 
 .general-statistic__chart-image {
-  margin-left: 18px;
+  margin-left: 20px;
 }
 
 .general-statistic__chart-button-first::before {
