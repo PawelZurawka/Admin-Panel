@@ -1,0 +1,51 @@
+.links {
+
+    &__table-single-row {
+        padding-top: 19px;
+        padding-bottom: 19px;//height 58px
+        border-top: $border;
+        transition: 0.4s;
+        &:hover {
+            background-color: $table-hover;
+        }
+        &:hover {
+            .links__table-icon-link, .links__table-icon-trash {
+                visibility: visible;
+            }
+        }
+    }
+
+    &__table-single-row:last-child {
+        border-bottom: $border;
+    }
+
+    &__table-link-title {
+        padding-left: 15px;
+    }
+
+    &__table-link {
+        padding-left: 10px;
+        text-overflow: ellipsis;
+    }
+
+    &__table-icon-link {
+        margin-left: 40px;
+        font-size: 15px;
+        visibility: hidden;
+        transition: 0ms;
+        color: $link-color;
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+
+    &__table-icon-trash {
+        margin-left: 20px;
+        font-size: 15px;
+        visibility: hidden;
+        transition: 0ms;
+        &:hover {
+            color: #000;
+        }
+    }
+}

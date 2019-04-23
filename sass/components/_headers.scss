@@ -1,7 +1,8 @@
 .section__header-wrapper {
     display: flex;
     align-items: center;
-    height: 48px;
+    padding-top: 14.5px;//height 48px
+    padding-bottom: 14.5px;
     border-bottom: $border;
     width: 100%;
 }
