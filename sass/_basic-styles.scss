@@ -4,22 +4,18 @@
   }
 
   body {
-    //padding??
     background-color: $body-bg-color;
     font-family: $font;
-    padding-top: 80px;// 62px topbar+border 20px space between sections
+    padding-top: 80px;// or 82px?? 62px topbar+border 20px space between sections
   }
   
   section {
     margin-bottom: 22px;
-    //padding: 30px; //????
-    //margin-top: 18px;  //???
   }
   
   h1, h2, h3, h4, h5, h6, ul, ol, p, a, div {
     font-family: $font;
     color: $main-font-color;
-    //padding: 10px;
   }
   
   a {

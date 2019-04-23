@@ -29,6 +29,7 @@
 @media(min-width: 1200px) {
     @include grid('xl');
 }
+
 /* GRID OFFSET */
 @mixin grid-offset($prefix) {
     @for $i from 1 through 12 {
