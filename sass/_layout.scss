@@ -4,6 +4,22 @@
     flex-wrap: wrap;
 }
 
+$grid-columns: 12;
+$grid-offset-columns: 12;
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    width: percentage($i / $grid-columns);
+  }
+}
+
+@for $i from 1 through $grid-offset-columns {
+  .col-offset-#{$i} {
+      margin-left: percentage($i / $grid-offset-columns);
+  }
+}
+
+
 @mixin grid($prefix) {
     @for $i from 1 through 12 {
       .col-#{$prefix}-#{$i} {
@@ -30,17 +46,16 @@
     @include grid('xl');
 }
 
-/* GRID OFFSET */
-@mixin grid-offset($prefix) {
-    @for $i from 1 through 12 {
-      .col-#{$prefix}-#{$i} {
-        $margin-left: 100% / 12 * $i;
-        flex: 0 0 $margin-left;
-        margin-left: $margin-left;
-      }
-    }
-}
-
-@media(min-width: 767px) {
-    @include grid-offset('offset');
-}
+ //GRID OFFSET
+//@mixin grid-offset($prefix) {
+   // @for $i from 1 through 12 {
+   //   .col-#{$prefix}-#{$i} {
+   //     $margin-left: 100% / 12 * $i;
+  //      flex: 0 0 $margin-left;
+  //      margin-left: $margin-left;
+  //    }
+//    }
+//}
+//
+//@media(min-width: 767px) {
+ //   @include grid-offset('offset');

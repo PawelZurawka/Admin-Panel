@@ -23,12 +23,15 @@
         cursor: pointer;
         padding-right: 20px;
         padding-top: 7px;
+        background-color: $sidebar-bg-color;
+        border: none;
+        outline: none;
         &:hover {
             color: $sidebar-font-color-hover;
         }
     }
 
-    &__menu-list {
+    &__list {
         margin: 0;
         border-bottom: $border-sidebar;
         padding-left: 0px;
@@ -36,7 +39,7 @@
         overflow: hidden;
     }
 
-    &__list-item {
+    &__item {
         position: relative;
         height: 42px;
         font-size: $paragraph-font-size;

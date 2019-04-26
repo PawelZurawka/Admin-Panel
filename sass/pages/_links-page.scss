@@ -1,9 +1,13 @@
 .links {
 
+    &__header {
+        @extend .statistic__header;
+    }
     &__button-wrapper {
         text-align: center;
-        padding-top: 23.5px;//height 87px
-        padding-bottom: 23.5px;
+        padding-top: 23.5px;
+        padding-bottom: 23.5px;  //height 87px
+        
     }
 }
 //Rest of section is in component folder

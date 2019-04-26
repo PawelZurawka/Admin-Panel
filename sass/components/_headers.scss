@@ -1,12 +1,3 @@
-.section__header-wrapper {
-    display: flex;
-    align-items: center;
-    padding-top: 14.5px;//height 48px
-    padding-bottom: 14.5px;
-    border-bottom: $border;
-    width: 100%;
-}
-
 .section__header-main-title {
     @include header-style;
     font-weight: $font-medium;

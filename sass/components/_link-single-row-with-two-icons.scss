@@ -1,6 +1,6 @@
 .links {
 
-    &__table-single-row {
+    &__table-row {
         padding-top: 19px;
         padding-bottom: 19px;//height 58px
         border-top: $border;
@@ -15,7 +15,7 @@
         }
     }
 
-    &__table-single-row:last-child {
+    &__table-row:nth-child(12) {
         border-bottom: $border;
     }
 

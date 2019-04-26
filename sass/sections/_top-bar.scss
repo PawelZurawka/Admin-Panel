@@ -1,4 +1,5 @@
-.top-bar {
+.header {
+    &__list {
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -11,6 +12,7 @@
     color: $icon-color;
     background-color: $section-bg-color;
     padding-right: 0;
+    }
 
     &__button {
         height: 100%;
@@ -89,7 +91,7 @@
             color: #000;
         }
         &:hover {
-            .top-bar__profile-name {
+            .header__profile-name {
                 color: $link-color-hover;
             }
         }

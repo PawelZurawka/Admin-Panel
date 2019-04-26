@@ -1,46 +1,30 @@
 //Date selection
-.general-statistic {
+.statistic {
+    
+    &__header {
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+        border-bottom: $border;
+    }
 
     &__date-selection {
-    display: flex; //??flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 34.5px;
-    padding-bottom: 34.5px;//height: 110px;
-    border-bottom: $border;
-    }
-
-    &__date-wrapper {
-        display: flex;
+        display: flex; //??flex-wrap: wrap;
         align-items: center;
-        border: $border;
-        border-radius: 3px;
-        width: 325px;
-        height: 40px;
-        margin-right: 14px;
+        justify-content: center;
+        padding-top: 34.5px;
+        padding-bottom: 34.5px;//height: 110px;
+        border-bottom: $border;
     }
 
-    &__date-from {
+    &__date {
         color: $paragraph-color;
         font-size: $paragraph-font-size;
-        width: 150px;
-        border-right: $border;
-        padding-left: 18px;
-        padding-top: 5px;
-    }
-
-    &__date-to {
-        width: 125px;
-        color: $paragraph-color;
-        font-size: $paragraph-font-size;
-        padding-left: 18px;
-        padding-top: 5px;
+        padding: 7.5px;
     }
 
     &__icon {
         font-size: 13px;
-        padding-left: 20px;
-        padding-top: 3px;
+        padding: 3px 10px 0 10px;
         cursor: pointer;
         &:hover {
             color: #000;
@@ -58,33 +42,30 @@
 }
 
 //Statistics
-.general-statistic {
+.statistic {
 
     &__table {
        margin-top: 40px;
        justify-content: space-between;
     }
 
-    &__single-row-wrapper {
-        padding-bottom: 22px;
-        flex-basis: 45%;
-    }
-
     &__small-header {
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
         border-bottom: $border;
+        padding-top: 20px;
         padding-bottom: 5px;
     }
 
-    &__stats {
-        text-align: right;
-        border-bottom: $border;
+    &__number {
         color: $paragraph-color;
-        padding-bottom: 5px;
+        font-weight: $font-light;
     }
 }
 
 //Chart
-.general-statistic {
+.statistic {
 
     &__chart {
     margin-top: 50px;
@@ -93,15 +74,16 @@
 
     &__chart-header {
         margin-bottom: 40px;
+        margin-top: 80px;
     }
-
-    &__chart-buttons {
+}
+    /*&__chart-buttons {
         display: flex; //??flex-wrap: nowrap;
         justify-content: space-evenly;
         margin-bottom: 55px;
     }
 
-    &__chart-button {
+     &__chart-button {
         position: relative;
         font-size: $header-font-size;
         color: $main-font-color;
@@ -132,4 +114,4 @@
         background-color: $tab-green;
     }
 
-}
+}*/
