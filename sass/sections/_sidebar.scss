@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: $sidebar-bg-color;
+    //transition: 0.4s;
 
     &__logo-wrapper {
         display: flex;
@@ -48,6 +49,7 @@
 
     &__link {
         display: flex;
+        flex-wrap: nowrap;
         height: 100%;
         align-items: center;
         padding-left: 18px;
@@ -123,5 +125,38 @@
         text-transform: capitalize;
         margin-left: 10px;
         font-size: $paragraph-font-size;
+    }
+}
+
+//NARROW SIDEBAR
+.sidebar-narrow {
+    width: 55px;
+    
+    &__logo {
+        display: none;
+    }
+
+    &__logo-wrapper {
+        justify-content: center;
+    }
+
+    &__hamburger-icon {
+        margin-right: 8px;
+    }
+
+    &__tab-name {
+        display: none;
+    }
+    &__manager-header {
+        display: none;
+    }
+
+    &__manager-photo {
+        transform: scale(0.6);
+        margin-left: 5px;
+    }
+
+    &__manager-name {
+        display: none;
     }
 }

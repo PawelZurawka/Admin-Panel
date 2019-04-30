@@ -25,12 +25,12 @@
         }
         &:hover i, &:hover span {
             color: #000;
-        }  
+        }
     }
 
     &__wallet {
-    border-left: $border;
-    border-right: $border;
+        border-left: $border;
+        border-right: $border;
     }
 
     &__wallet-button {

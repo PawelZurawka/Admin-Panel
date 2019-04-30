@@ -32,3 +32,51 @@ var chart = new Chart(ctx, {
         }]
     },
 });
+
+
+document.getElementById("hamburger").addEventListener("click", function () {
+  
+  document.querySelector(".sidebar").classList.toggle("sidebar-narrow");
+  
+  document.querySelector(".sidebar__logo-wrapper").classList.toggle("sidebar-narrow__logo-wrapper");
+
+  document.querySelector(".sidebar__logo").classList.toggle("sidebar-narrow__logo");
+  
+  //document.querySelector(".sidebar__hamburger-icon").classList.toggle("sidebar-narrow__hamburger-icon");
+
+  document.querySelector(".sidebar__manager-header").classList.toggle("sidebar-narrow__manager-header");
+
+  document.querySelector(".sidebar__manager-photo").classList.toggle("sidebar-narrow__manager-photo");
+
+  document.querySelector(".sidebar__manager-name").classList.toggle("sidebar-narrow__manager-name");
+
+
+  //document.querySelector(".sidebar__icon").classList.toggle("sidebar-narrow__icon");
+  var sideBar = document.querySelectorAll(".sidebar__icon");
+  for (var i = 0; i < sideBar.length; i++) {
+    sideBar[i].classList.toggle("sidebar-narrow__icon");
+  }
+
+  //document.querySelector(".sidebar__tab-name").classList.toggle("sidebar-narrow__tab-name");
+  var listName = document.querySelectorAll(".sidebar__tab-name");
+  for (var e = 0; e < listName.length; e++) {
+    listName[e].classList.toggle("sidebar-narrow__tab-name");
+  }
+
+  //document.querySelector(".container").classList.toggle("container--narrow-menu");
+  var containerFluid = document.querySelectorAll(".container--fluid");
+  for (var f = 0; f < containerFluid.length; f++) {
+    containerFluid[f].classList.toggle("container--fluid-narrow-menu");
+  }
+
+});
+/*
+function toggleMenu(visible) {
+  document.querySelector('.sidebar').classList.toggle('sidebar-narrow', visible);
+}
+
+document.querySelector('#hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+*/

@@ -13,6 +13,11 @@
                 visibility: visible;
             }
         }
+        @include breakpoint (sm) {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
     }
 
     &__table-row:nth-child(12) {
@@ -21,11 +26,30 @@
 
     &__table-link-title {
         padding-left: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include breakpoint (sm) {
+            padding-left: 0;
+        }
     }
 
     &__table-link {
         padding-left: 10px;
+        overflow: hidden;
         text-overflow: ellipsis;
+        @include breakpoint (sm) {
+            padding-left: 0;
+        }
+    }
+
+    &__table-icons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        @include breakpoint (sm) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
     }
 
     &__table-icon-link {
@@ -37,6 +61,11 @@
         &:hover {
             color: $link-color-hover;
         }
+        @include breakpoint (sm) {
+            visibility: visible;
+            margin-right: 13%;
+            margin-left: 0;
+        }
     }
 
     &__table-icon-trash {
@@ -46,6 +75,11 @@
         transition: 0ms;
         &:hover {
             color: #000;
+        }
+        @include breakpoint (sm) {
+            visibility: visible;
+            margin-right: 13%;
+            margin-left: 0;
         }
     }
 }

@@ -3,6 +3,9 @@
     margin: 0 auto;
     background-color: $section-bg-color;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    @include breakpoint (sm) {
+        margin: 0;
+    }
 }
   
 .container--fluid {
@@ -10,7 +13,9 @@
     margin-left: 188px; //sidebar
     padding-left: 15px; //0?
     padding-right: 15px; //0?
-
+    @include breakpoint (sm) {
+        padding: 0;
+    }
 }
 
 .container--small {
@@ -18,4 +23,12 @@
     max-width: 688px;
     margin: 0 auto;
     //padding? 10px or 0 5px
+    @include breakpoint (sm) {
+        width: 100%;
+    }
+}
+
+.container--fluid-narrow-menu {
+    width: calc(100% - 55px);
+    margin-left: 55px;
 }

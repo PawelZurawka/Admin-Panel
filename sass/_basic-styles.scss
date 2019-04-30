@@ -7,6 +7,9 @@
     background-color: $body-bg-color;
     font-family: $font;
     padding-top: 80px;// or 82px?? 62px topbar+border 20px space between sections
+    //@include breakpoint (sm) {
+     // padding-top: 0;
+    //}
   }
   
   section {

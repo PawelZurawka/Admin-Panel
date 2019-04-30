@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <ul class="container--fluid header__list">
+        <ul class="container--fluid container--fluid-narrow-menu header__list">
             <li class="header__wallet">
                 <button class="header__wallet-button header__button">
                     <i class="icon icon-wallet header__wallet-icon"></i>
@@ -33,66 +33,66 @@
             </button>
         </ul>
     </header>
-    <aside class="sidebar">
-        <div class="sidebar__logo-wrapper">
-            <h1><img class="sidebar__logo" src="images/logo.png" alt="logo"></h1>
-            <button class="sidebar__hamburger-icon icon icon-hamburger" id="hamburger"></button>
+    <aside class="sidebar sidebar-narrow">
+        <div class="sidebar__logo-wrapper sidebar-narrow__logo-wrapper">
+            <h1><img class="sidebar__logo sidebar-narrow__logo" src="images/logo.png" alt="logo"></h1>
+            <button class="sidebar__hamburger-icon sidebar-narrow__hamburger-icon icon icon-hamburger" id="hamburger"></button>
         </div>
         <ul class="sidebar__list">
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#general">
-                    <i class="icon icon-general sidebar__icon"></i>
-                    General
+                    <i class="icon icon-general sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">General</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="details">
-                    <i class="icon icon-details sidebar__icon"></i>
-                    Details
+                    <i class="icon icon-details sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Details</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="links">
-                    <i class="icon icon-links sidebar__icon"></i>
-                    Links
+                    <i class="icon icon-links sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Links</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="banners">
-                    <i class="icon icon-banners sidebar__icon"></i>
-                    Banners
+                    <i class="icon icon-banners sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Banners</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="personal-data">
-                    <i class="icon icon-personaldata sidebar__icon"></i>
-                    Personal data
+                    <i class="icon icon-personaldata sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Personal data</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="payout">
-                    <i class="icon icon-payout sidebar__icon"></i>
-                    Payout
+                    <i class="icon icon-payout sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Payout</span>
                 </a>
             </li>
             <li class="sidebar__item">
                 <a class="sidebar__link" href="#" id="postback">
-                    <i class="icon icon-postback sidebar__icon"></i>
-                    Postback
+                    <i class="icon icon-postback sidebar__icon sidebar-narrow__icon"></i>
+                    <span class="sidebar__tab-name sidebar-narrow__tab-name">Postback</span>
                 </a>
             </li>
         </ul>
         <div class="sidebar__manager">
-            <h2 class="sidebar__manager-header">your manager</h2>
+            <h2 class="sidebar__manager-header sidebar-narrow__manager-header">your manager</h2>
             <div class="sidebar__manager-wrapper">
-                <div class="sidebar__manager-photo">
+                <div class="sidebar__manager-photo sidebar-narrow__manager-photo">
                     <img src="images/manager.png" alt="manager photo">
                 </div>
-                <p class="sidebar__manager-name"> mikhael e.</p>
+                <p class="sidebar__manager-name sidebar-narrow__manager-name"> mikhael e.</p>
             </div>
         </div>
     </aside>
-    <section class="statistic container--fluid">
+    <section class="statistic container--fluid container--fluid-narrow-menu">
         <div class="statistic__container container" id="general">
             <h2 class="statistic__header section__header-main-title">general statistic</h2>
             <div class="statistic__date-selection">
@@ -127,132 +127,136 @@
                 <div class="statistic__chart-header">
                     <h3 class="header-small">Earnings chart</h3>
                 </div>
-                <canvas id="myChart"></canvas>
+                <div class="statistic__scroll-wrapper">
+                    <div class="statistic__chart-wrapper">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="links container--fluid">
+    <section class="links container--fluid container--fluid-narrow-menu">
         <div class="links__container container">
             <h2 class="links__header section__header-main-title">links</h2>
             <div class="links__button-wrapper">
                 <button class="links__button btn btn--secondary">+ add new</button>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Home page</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Home page</div>
+                    <div class="links__table-link col-7 col-sm-12 col-sm-12">
                         <a href="#" class="link--large">http://www.homepage.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Currently offer</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Currently offer</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.currently.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Blurpix</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Blurpix</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.blurpix.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Your Site</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Your Site</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.yoursite.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Google</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Google</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.google.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Facebook</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Facebook</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.facebook.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Dashboard</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Dashboard</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.dashboard.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Blurax</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Blurax</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.blurax.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Piece of Wine</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Piece of Wine</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.pieceofwine.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>
             </div>
             <div class="links__table-row container--small row">
-                <div class="links__table-two-columns-wrapper col-10 row">
-                    <div class="links__table-link-title header-small col-5">Twitter</div>
-                    <div class="links__table-link col-7">
+                <div class="links__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="links__table-link-title header-small col-5 col-sm-12">Twitter</div>
+                    <div class="links__table-link col-7 col-sm-12">
                         <a href="#" class="link--large">http://www.twitter.com</a>
                     </div>
                 </div>
-                <div class="links__table-icons-wrapper col-2">
+                <div class="links__table-icons-wrapper col-2 col-sm-3">
                     <i class="links__table-icon-link icon icon-links"></i>
                     <i class="links__table-icon-trash icon icon-trash"></i>
                 </div>

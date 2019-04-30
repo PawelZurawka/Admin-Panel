@@ -8,19 +8,29 @@
     }
 
     &__date-selection {
-        display: flex; //??flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         padding-top: 34.5px;
         padding-bottom: 34.5px;//height: 110px;
         border-bottom: $border;
+        @include breakpoint (sm) {
+            padding-top: 14.5px;
+            padding-bottom: 14.5px;
+        }
     }
 
     &__date {
         color: $paragraph-color;
         font-size: $paragraph-font-size;
         padding: 7.5px;
+        @include breakpoint (sm) {
+            padding: 1.25px 0 0 0;
+            font-size: 12px;
+        }
     }
+
 
     &__icon {
         font-size: 13px;
@@ -29,16 +39,26 @@
         &:hover {
             color: #000;
         }
+        @include breakpoint (sm) {
+            display: none;
+        }
     }
 
     &__refresh-button {
         padding: 11px 12px 9px 13px;
+        @include breakpoint (sm) {
+            padding: 7px 9px 5px 10px;
+            margin: 5px;
+        }
     }
 
     &__button-icon {
         font-size: 15px;
         color: #FFF;
-    }
+        @include breakpoint (sm) {
+            font-size: 12px;
+            }
+        }
 }
 
 //Statistics
@@ -47,6 +67,9 @@
     &__table {
        margin-top: 40px;
        justify-content: space-between;
+       @include breakpoint (sm) {
+           margin-top: 20px;
+       }
     }
 
     &__small-header {
@@ -56,6 +79,11 @@
         border-bottom: $border;
         padding-top: 20px;
         padding-bottom: 5px;
+        @include breakpoint (sm) {
+            width: 100%;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
 
     &__number {
@@ -68,15 +96,33 @@
 .statistic {
 
     &__chart {
-    margin-top: 50px;
-    padding-bottom: 55px;
+        padding-right: 15px;
+        padding-bottom: 55px;
+        @include breakpoint (sm) {
+            padding-bottom: 20px;
+        }
     }
 
     &__chart-header {
         margin-bottom: 40px;
         margin-top: 80px;
+        padding-left: 15px;
+        @include breakpoint (sm) {
+            margin-bottom: 25px;
+            margin-top: 45px;
+        }
+    }
+
+    &__scroll-wrapper {
+        overflow-x: auto;
+    }
+
+    &__chart-wrapper {
+        position: relative;
+        min-width: 280px;
     }
 }
+
     /*&__chart-buttons {
         display: flex; //??flex-wrap: nowrap;
         justify-content: space-evenly;

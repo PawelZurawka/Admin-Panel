@@ -3,6 +3,10 @@
     font-weight: $font-medium;
     text-transform: uppercase;
     padding-left: 18px;
+    @include breakpoint (sm) {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 
 .header-small {
