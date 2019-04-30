@@ -22,8 +22,8 @@
     &__hamburger-icon {
         font-size: 19px;
         cursor: pointer;
-        padding-right: 20px;
-        padding-top: 7px;
+        margin-right: 20px;
+        margin-top: 7px;
         background-color: $sidebar-bg-color;
         border: none;
         outline: none;
@@ -140,13 +140,10 @@
         justify-content: center;
     }
 
-    &__hamburger-icon {
-        margin-right: 8px;
-    }
-
     &__tab-name {
         display: none;
     }
+
     &__manager-header {
         display: none;
     }
