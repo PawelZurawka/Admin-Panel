@@ -129,31 +129,38 @@
 }
 
 //NARROW SIDEBAR
-.sidebar-narrow {
-    width: 55px;
+body.active-menu {
+    .container--fluid {
+        width: calc(100% - 55px);
+        margin-left: 55px;
+    }
+    .sidebar {
+        width: 55px;
+        
+        &__logo {
+            display: none;
+        }
     
-    &__logo {
-        display: none;
-    }
-
-    &__logo-wrapper {
-        justify-content: center;
-    }
-
-    &__tab-name {
-        display: none;
-    }
-
-    &__manager-header {
-        display: none;
-    }
-
-    &__manager-photo {
-        transform: scale(0.6);
-        margin-left: 5px;
-    }
-
-    &__manager-name {
-        display: none;
+        &__logo-wrapper {
+            justify-content: center;
+        }
+    
+        &__tab-name {
+            display: none;
+        }
+    
+        &__manager-header {
+            display: none;
+        }
+    
+        &__manager-photo {
+            transform: scale(0.6);
+            margin-left: 5px;
+        }
+    
+        &__manager-name {
+            display: none;
+        }
     }
 }
+

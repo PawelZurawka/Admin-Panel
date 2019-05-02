@@ -33,8 +33,18 @@ var chart = new Chart(ctx, {
     },
 });
 
+function toggleMenu(visible) {
+  document.querySelector('body').classList.toggle('active-menu', visible);
+}
 
-document.getElementById("hamburger").addEventListener("click", function () {
+document.querySelector('#hamburger').addEventListener('click', function(i) {
+  i.preventDefault();
+  toggleMenu();
+});
+
+
+
+/*document.getElementById("hamburger").addEventListener("click", function () {
   
   document.querySelector(".sidebar").classList.toggle("sidebar-narrow");
   
@@ -42,7 +52,7 @@ document.getElementById("hamburger").addEventListener("click", function () {
 
   document.querySelector(".sidebar__logo").classList.toggle("sidebar-narrow__logo");
   
-  //document.querySelector(".sidebar__hamburger-icon").classList.toggle("sidebar-narrow__hamburger-icon");
+  document.querySelector(".sidebar__hamburger-icon").classList.toggle("sidebar-narrow__hamburger-icon");
 
   document.querySelector(".sidebar__manager-header").classList.toggle("sidebar-narrow__manager-header");
 
@@ -69,14 +79,4 @@ document.getElementById("hamburger").addEventListener("click", function () {
     containerFluid[f].classList.toggle("container--fluid-narrow-menu");
   }
 
-});
-/*
-function toggleMenu(visible) {
-  document.querySelector('.sidebar').classList.toggle('sidebar-narrow', visible);
-}
-
-document.querySelector('#hamburger').addEventListener('click', function(e) {
-  e.preventDefault();
-  toggleMenu();
-});
-*/
+});*/

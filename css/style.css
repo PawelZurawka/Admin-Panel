@@ -915,11 +915,6 @@ button {
   }
 }
 
-.container--fluid-narrow-menu {
-  width: calc(100% - 55px);
-  margin-left: 55px;
-}
-
 .link--small {
   text-decoration: none;
   color: #56819F;
@@ -1331,32 +1326,37 @@ button {
   color: #FFA200;
 }
 
-.sidebar-narrow {
+body.active-menu .container--fluid {
+  width: calc(100% - 55px);
+  margin-left: 55px;
+}
+
+body.active-menu .sidebar {
   width: 55px;
 }
 
-.sidebar-narrow__logo {
+body.active-menu .sidebar__logo {
   display: none;
 }
 
-.sidebar-narrow__logo-wrapper {
+body.active-menu .sidebar__logo-wrapper {
   justify-content: center;
 }
 
-.sidebar-narrow__tab-name {
+body.active-menu .sidebar__tab-name {
   display: none;
 }
 
-.sidebar-narrow__manager-header {
+body.active-menu .sidebar__manager-header {
   display: none;
 }
 
-.sidebar-narrow__manager-photo {
+body.active-menu .sidebar__manager-photo {
   transform: scale(0.6);
   margin-left: 5px;
 }
 
-.sidebar-narrow__manager-name {
+body.active-menu .sidebar__manager-name {
   display: none;
 }
 
