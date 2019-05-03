@@ -42,9 +42,30 @@ document.querySelector('#hamburger').addEventListener('click', function(i) {
   toggleMenu();
 });
 
+/*$(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() < 767) {
+
+    $('#hamburger').addClass('active-menu');
+
+  } else {
+    $('#hamburger').removeClass('active-menu');
+  }
+});
+
+function toggleMenu(visible) {
+  document.querySelector('body').classList.toggle('active-menu', visible);
+}
+
+var mq = window.matchMedia( "(max-width: 767px)" );
+
+if (mq == true) {
+  toogleMenu();
+}
 
 
-/*document.getElementById("hamburger").addEventListener("click", function () {
+
+document.getElementById("hamburger").addEventListener("click", function () {
   
   document.querySelector(".sidebar").classList.toggle("sidebar-narrow");
   

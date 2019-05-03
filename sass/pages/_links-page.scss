@@ -1,5 +1,7 @@
 .links {
-
+    @include breakpoint (sm) {
+        display: none;
+    }
     &__header {
         @extend .statistic__header;
     }
@@ -8,6 +10,14 @@
         padding-top: 23.5px;
         padding-bottom: 23.5px;  //height 87px
         
+    }
+}
+
+body.active-menu {
+    .links {
+    @include breakpoint (sm) {
+        display: inline-block;
+        }   
     }
 }
 //Rest of section is in component folder link-single-row-with-two-icons

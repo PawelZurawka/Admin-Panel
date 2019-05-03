@@ -1,5 +1,8 @@
 //Date selection
 .statistic {
+    @include breakpoint (sm) {
+        display: none;
+    }
     
     &__header {
         padding-top: 14.5px;
@@ -16,7 +19,7 @@
         padding-bottom: 34.5px;//height: 110px;
         border-bottom: $border;
         @include breakpoint (sm) {
-            padding-top: 14.5px;
+            padding-top: 18.5px;
             padding-bottom: 14.5px;
         }
     }
@@ -84,6 +87,10 @@
             margin-left: 15px;
             margin-right: 15px;
         }
+        @include breakpoint (md) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
 
     &__number {
@@ -120,6 +127,14 @@
     &__chart-wrapper {
         position: relative;
         min-width: 280px;
+    }
+}
+
+body.active-menu {
+    .statistic {
+    @include breakpoint (sm) {
+        display: inline-block;
+        }   
     }
 }
 
