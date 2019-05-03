@@ -148,6 +148,7 @@ body.active-menu {
     .container--fluid {
         width: calc(100% - 55px);
         margin-left: 55px;
+        transition: 0.4s;
         @include breakpoint (sm) {
             margin-left: 0;
             width: 100vw;
