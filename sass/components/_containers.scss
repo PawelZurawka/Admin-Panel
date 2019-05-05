@@ -7,15 +7,19 @@
         margin: 0;
     }
 }
-  
+
+//NARROW SIDEBAR
 .container--fluid {
-    width: calc(100% - 188px);
-    margin-left: 188px; //sidebar
-    padding-left: 15px; //0?
-    padding-right: 15px; //0?
+    width: calc(100% - 55px);
+    margin-left: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
     transition: 0.4s;
     @include breakpoint (sm) {
-        padding: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100vw;
     }
 }
 
@@ -28,3 +32,23 @@
         width: 100%;
     }
 }
+
+//NORMAL SIDEBAR
+body.active-menu {
+    .container--fluid {
+        width: calc(100% - 188px);
+        margin-left: 188px; //sidebar
+        padding-left: 15px; //0?
+        padding-right: 15px; //0?
+        transition: 0.4s;
+        @include breakpoint (sm) {
+            padding: 0;
+        }
+    }
+}
+
+//ul.container--fluid {
+//    @include breakpoint (sm) {
+//        margin-left: 0;
+ //       }   
+//    }

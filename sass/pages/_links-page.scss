@@ -1,7 +1,8 @@
 .links {
-    @include breakpoint (sm) {
-        display: none;
-    }
+    @include breakpoint (sm) { //NARROW SIDEBAR
+        display: inline-block;
+    } 
+
     &__header {
         @extend .statistic__header;
     }
@@ -12,12 +13,12 @@
         
     }
 }
-
+//NORMAL SIDEBAR
 body.active-menu {
     .links {
-    @include breakpoint (sm) {
-        display: inline-block;
-        }   
+        @include breakpoint (sm) {
+            display: none;
+        }
     }
 }
 //Rest of section is in component folder link-single-row-with-two-icons

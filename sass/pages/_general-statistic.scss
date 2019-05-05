@@ -1,8 +1,8 @@
 //Date selection
 .statistic {
-    @include breakpoint (sm) {
-        display: none;
-    }
+    @include breakpoint (sm) {  //NARROW SIDEBAR
+        display: inline-block;
+    } 
     
     &__header {
         padding-top: 14.5px;
@@ -132,9 +132,9 @@
 
 body.active-menu {
     .statistic {
-    @include breakpoint (sm) {
-        display: inline-block;
-        }   
+        @include breakpoint (sm) { //NORMAL SIDEBAR
+            display: none;
+        }
     }
 }
 

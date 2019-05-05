@@ -1,9 +1,10 @@
+//NARROW SIDEBAR
 .sidebar {
     z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
-    width: 188px;
+    width: 55px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,16 +12,29 @@
     background-color: $sidebar-bg-color;
     transition: 0.4s;
     @include breakpoint (sm) {
-        width: 100vw; 
+        height: 60px;
+        overflow: hidden;
+        width: 100%;
     }
 
     &__logo-wrapper {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         height: 60px;
         margin-left: 18px;
-        width: calc(100%-18px);
+        //width: calc(100%-18px);
+        @include breakpoint (sm) {
+            justify-content: space-between;
+            height: 60px;
+        }
+    }
+
+    &__logo {
+        display: none;
+        @include breakpoint (sm) {
+            display: block;
+        }
     }
 
     &__hamburger-icon {
@@ -43,15 +57,14 @@
         padding-bottom: 24px;
         overflow: hidden;
         @include breakpoint (sm) {
-            padding-bottom: 5px;
+            display: none;
         }
     }
 
     &__item {
         position: relative;
         height: 42px;
-        font-size: $paragraph-font-size;
-        
+        font-size: $paragraph-font-size;  
     }
 
     &__link {
@@ -84,44 +97,27 @@
         margin-right: 12px;
     }
 
-    &__manager-header {
-        text-transform: uppercase;
-        color: #808080;
-        margin-left: 18px;
-        margin-top: 25px;
-        margin-bottom: 15px;
-        font-size: $paragraph-font-size;
-        font-weight: $font-medium;
+    &__tab-name {
+        display: none;
+    }
+
+    &__manager {
         @include breakpoint (sm) {
-            margin-top: 5px;
+            display: none;
         }
+    }
+
+    &__manager-header {
+        display: none;
     }
 
     &__manager-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        cursor: pointer;
-        transition: 0.4s;
-        &:hover {
-            background-color: $sidebar-bg-color-hover;
-        }
-        &:hover {
-            .sidebar__manager-name {
-                color: $link-color-hover;
-            }
-        }
-        @include breakpoint (sm) {
-            padding-bottom: 5px;
-            border-bottom: $border-sidebar;
-            margin-bottom: 7px;
-        }
+        padding-bottom: 0;
     }
 
     &__manager-photo {
-        display: flex;
-        margin-left: 20px;
-        position: relative;
+        transform: scale(0.6);
+        margin-left: 5px;
         &::after {
             position: absolute;
             content: "";
@@ -135,79 +131,104 @@
     }
 
     &__manager-name {
-        @include link-style-lg;
-        transition: 0.2s;
-        text-transform: capitalize;
-        margin-left: 10px;
-        font-size: $paragraph-font-size;
+        display: none;
     }
 }
 
-//NARROW SIDEBAR
+//NORMAL SIDEBAR
 body.active-menu {
-    .container--fluid {
-        width: calc(100% - 55px);
-        margin-left: 55px;
-        transition: 0.4s;
-        @include breakpoint (sm) {
-            margin-left: 0;
-            width: 100vw;
-        }
-    }
     .sidebar {
-        width: 55px;
+        width: 188px;
         @include breakpoint (sm) {
-            height: 60px;
-            overflow: hidden;
-            width: 100%;
+            width: 100vw;
+            height: 100vh; 
         }
 
         &__list {
             @include breakpoint (sm) {
-                display: none;
+                padding-bottom: 5px;
+                display: block;
             }
         }
         
         &__logo {
-            display: none;
-            @include breakpoint (sm) {
-                display: block;
-            }
+            display: block;
         }
-    
+
         &__logo-wrapper {
-            justify-content: center;
-            @include breakpoint (sm) {
-                justify-content: space-between;
-                height: 60px;
-            }
+            justify-content: space-between;
+            //width: calc(100%-18px);  
         }
         
         &__tab-name {
-            display: none;
+            display: inline-block;
         }
 
         &__manager {
             @include breakpoint (sm) {
-                display: none;
+                display: block;
             }
         }
 
         &__manager-header {
-            display: none;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #808080;
+            margin-left: 18px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: $paragraph-font-size;
+            font-weight: $font-medium;
+            @include breakpoint (sm) {
+                margin-top: 5px;
+            }
         }
         
         &__manager-wrapper {
-            padding-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover {
+                background-color: $sidebar-bg-color-hover;
+            }
+            &:hover {
+                .sidebar__manager-name {
+                    color: $link-color-hover;
+                }
+            }
+            @include breakpoint (sm) {
+            padding-bottom: 5px;
+            border-bottom: $border-sidebar;
+            margin-bottom: 7px;
+            }
         }
 
         &__manager-photo {
-            transform: scale(0.6);
-            margin-left: 5px;
+            display: flex;
+            margin-left: 20px;
+            transform: scale(1);
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                background-color: $marked-checkbox;
+                top: 0;
+                left: 32px;
+            }
         }
-    
+
         &__manager-name {
-            display: none;
+            display: block;
+            @include link-style-lg;
+            transition: 0.2s;
+            text-transform: capitalize;
+            margin-left: 10px;
+            font-size: $paragraph-font-size;
         }
     }
 }

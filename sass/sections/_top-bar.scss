@@ -6,12 +6,12 @@
     //top: 0;
     //height: 60px; //62 but 2px is border
     margin-top: 0;
+    padding-right: 0;
     margin-bottom: 0;
     //overflow: hidden;
     border-bottom: $border;
     color: $icon-color;
     background-color: $section-bg-color;
-    padding-right: 0;
     @include breakpoint (md) {
         position: fixed;
         top: 0;
@@ -19,17 +19,9 @@
         height: 60px;
     }
     @include breakpoint (sm) {
-        position: static;
-        flex-wrap: wrap;
-        margin: 0;
-        width: 100%;
-        flex-direction: column;
-        padding-left: 0;
-        border: none;
-        background-color: $sidebar-bg-color;
-        justify-content: flex-start;
-        }
+        display: none;
     }
+}
 
     &__button {
         border: none;
@@ -42,31 +34,19 @@
         &:hover i, &:hover span {
             color: #000;
         }
-        @include breakpoint (sm) {
-            background-color: $sidebar-bg-color;
-        }
     }
 
     &__wallet {
         border-left: $border;
         border-right: $border;
-        @include breakpoint (sm) {
-            border: none;
-        }
     }
 
     &__wallet-button {
         padding: 18px;
-        @include breakpoint (sm) {
-            padding: 12px 18px;
-        }
     }
 
     &__wallet-icon {
         font-size: 18px;
-        @include breakpoint (sm) {
-            font-size: 16px;
-        }
     }
 
     &__money {
@@ -77,7 +57,7 @@
         padding-right: 15px;
         transition: 0.4s;
         @include breakpoint (sm) {
-            font-size: 18px;
+            display: none;
         }
     }
 
@@ -90,17 +70,11 @@
 
     &__notification {
         border-right: $border;
-        @include breakpoint (sm) {
-            border: none;
-        }
     }
 
     &__notification-button {
         padding: 20px;
         position: relative;
-        @include breakpoint (sm) {
-            padding: 12px 18px;
-        }
     }
 
     &__notification-icon {
@@ -114,15 +88,6 @@
             border-radius: 50%;
             top: 17px;
             right: 20px;
-        }
-        @include breakpoint (sm) {
-            font-size: 16px;
-            &::after {
-                top: 9px;
-                right: 18px;
-                width: 7px;
-                height: 7px;
-            }
         }
     }
     
@@ -144,73 +109,132 @@
                 color: $link-color-hover;
             }
         }
-        @include breakpoint (sm) {
-            border: none;
-            padding: 12px 18px;
-        }
     }
 
     &__profile-icon {
         font-size: 17px;
-        @include breakpoint (sm) {
-            font-size: 16px;
-        }
     }
 
     &__profile-name {
         padding-left: 12px;
         text-transform: capitalize;
         @include breakpoint (sm) {
-            font-size: 14px;
+            display: none;
         }
     }
 
     &__quit-button {
         padding: 19px 20px 16px 21px;
-        @include breakpoint (sm) {
-            padding: 12px 16px 12px 21px;
-            text-align: left;
-        }
     }
 
     &__quit-icon {
         font-size: 19px;
-        @include breakpoint (sm) {
-            font-size: 18px;
-        }
     }
 }
 
-//NARROW TOPBAR (UNDER SIDEBAR)
-//body.active-menu {
- //   .header {
- //       &__list {
-//            margin-left: 0;
- //       }
-//    }
-//}
-
 body.active-menu {
-    ul.container--fluid {
-    @include breakpoint (sm) {
-        margin-left: 0;
-        }   
-    }
     .header {
         &__list {
+            padding-right: 0;
             @include breakpoint (sm) {
-                display: none;
+                display: flex;
+                position: static;
+                flex-wrap: wrap;
+                margin: 0;
+                width: 100%;
+                flex-direction: column;
+                padding-left: 0;
+                border: none;
+                background-color: $sidebar-bg-color;
+                justify-content: flex-start;
             }
         }
+
+        &__button {
+            @include breakpoint (sm) {
+                background-color: $sidebar-bg-color;
+            }
+        }
+
+        &__wallet {
+            @include breakpoint (sm) {
+                border: none;
+            }
+        }
+
+        &__wallet-button {
+            @include breakpoint (sm) {
+                padding: 12px 18px;
+            }
+        }
+
+        &__notification {
+            @include breakpoint (sm) {
+                border: none;
+            }
+        }
+
+        &__notification-button {
+            @include breakpoint (sm) {
+                padding: 12px 18px;
+            }
+        }
+
+        &__notification-icon {
+            @include breakpoint (sm) {
+                font-size: 16px;
+                &::after {
+                    top: 9px;
+                    right: 18px;
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+
+        &__wallet-icon {
+            @include breakpoint (sm) {
+                font-size: 16px;
+            }
+        }
+
         &__money {
             @include breakpoint (sm) {
-                display: none;
-                }
+                display: inline-block;
+                font-size: 18px;
+            }
+        }
+
+        &__profile {
+            @include breakpoint (sm) {
+                border: none;
+                padding: 12px 18px;
+            }
         }
 
         &__profile-name {
             @include breakpoint (sm) {
-                display: none;
+                display: block;
+                font-size: 14px;
+            }
+        }
+
+        &__profile-icon {
+            @include breakpoint (sm) {
+                font-size: 16px;
+            }
+        }
+
+        &__quit-button {
+            @include breakpoint (sm) {
+                padding: 12px 16px 12px 21px;
+                text-align: left;
+            }
+        }
+
+        &__quit-icon {
+            @include breakpoint (sm) {
+                font-size: 18px;
             }
         }
     }
