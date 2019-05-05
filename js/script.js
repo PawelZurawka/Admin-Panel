@@ -1,3 +1,5 @@
+'use strict';
+
 var ctx = document.getElementById('myChart').getContext('2d');
 
 var chart = new Chart(ctx, {
@@ -42,14 +44,19 @@ document.querySelector('#hamburger').addEventListener('click', function(i) {
   toggleMenu();
 });
 
-/*$(window).on('resize', function() {
-  var win = $(this);
-  if (win.width() < 767) {
+ // if (window.screen.width <= 767) {
+ // }
+   
 
-    $('#hamburger').addClass('active-menu');
+/*
+$(window).on('resize', function() {
+  var win = $(this);
+  if (window.screen.width <= 767) {
+
+    $('body').removeClass('active-menu');
 
   } else {
-    $('#hamburger').removeClass('active-menu');
+    $('body').addClass('active-menu');
   }
 });
 

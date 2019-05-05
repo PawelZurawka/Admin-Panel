@@ -23,7 +23,6 @@
         justify-content: center;
         height: 60px;
         margin-left: 18px;
-        //width: calc(100%-18px);
         @include breakpoint (sm) {
             justify-content: space-between;
             height: 60px;
@@ -157,7 +156,6 @@ body.active-menu {
 
         &__logo-wrapper {
             justify-content: space-between;
-            //width: calc(100%-18px);  
         }
         
         &__tab-name {
@@ -199,9 +197,17 @@ body.active-menu {
                 }
             }
             @include breakpoint (sm) {
-            padding-bottom: 5px;
-            border-bottom: $border-sidebar;
-            margin-bottom: 7px;
+                padding-bottom: 5px;
+                border-bottom: $border-sidebar;
+                margin-bottom: 7px;
+                &:hover {
+                    background-color: $sidebar-bg-color;
+                }
+                &:hover {
+                    .sidebar__manager-name {
+                        color: $link-color;
+                    }
+                }
             }
         }
 

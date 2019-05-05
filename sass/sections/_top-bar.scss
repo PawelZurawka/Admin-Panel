@@ -153,6 +153,12 @@ body.active-menu {
         &__button {
             @include breakpoint (sm) {
                 background-color: $sidebar-bg-color;
+                &:hover {
+                    background-color: none;
+                }
+                &:hover i, &:hover span {
+                    color: $icon-color;
+                }
             }
         }
 
@@ -209,6 +215,17 @@ body.active-menu {
             @include breakpoint (sm) {
                 border: none;
                 padding: 12px 18px;
+                &:hover {
+                    background-color: $sidebar-bg-color;
+                }
+                &:hover i {
+                    color: $icon-color;
+                }
+                &:hover {
+                    .header__profile-name {
+                        color: $link-color;
+                    }
+                }
             }
         }
 
@@ -227,7 +244,7 @@ body.active-menu {
 
         &__quit-button {
             @include breakpoint (sm) {
-                padding: 12px 16px 12px 21px;
+                padding: 12px 20px;
                 text-align: left;
             }
         }
