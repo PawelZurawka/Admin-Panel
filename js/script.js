@@ -44,9 +44,31 @@ document.querySelector('#hamburger').addEventListener('click', function(i) {
   toggleMenu();
 });
 
- // if (window.screen.width <= 767) {
- // }
-   
+
+var onLoad = function() { //dlaczego jak miałem zapisane onLoad jako samą zmienną, a nie funkcję to przy odpalaniu na dużym ekranie dodawało klasę active-menu,ale na małym nie usuwało?
+  document.querySelector('body').classList.add('active-menu');
+};
+
+if (window.screen.width > 767) {
+  onLoad();
+}
+
+window.addEventListener('resize', function() {
+  if (window.screen.width < 767) {
+    document.querySelector('body').classList.remove('active-menu');
+  }
+  else { 
+    document.querySelector('body').classList.add('active-menu');
+  }
+});
+
+/*var name = this.getAttribute("href");
+     document.querySelector(name).classList.add('show');
+
+document.querySelectorAll('.modal').forEach(function(modal){
+  modal.classList.remove('show');
+});*/
+
 
 /*
 $(window).on('resize', function() {
