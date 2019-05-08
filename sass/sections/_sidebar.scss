@@ -13,7 +13,6 @@
     transition: 0.4s;
     @include breakpoint (sm) {
         height: 60px;
-        overflow: hidden;
         width: 100%;
     }
 

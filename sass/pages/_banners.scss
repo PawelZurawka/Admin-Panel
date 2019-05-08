@@ -1,0 +1,108 @@
+.banners {
+    @include breakpoint (sm) { //NARROW SIDEBAR
+        display: inline-block;
+    } 
+
+    &__header {
+        @extend .statistic__header;
+    }
+    &__button-wrapper {
+        text-align: center;
+        padding-top: 23.5px;
+        padding-bottom: 23.5px;  //height 87px
+        
+    }
+}
+//NORMAL SIDEBAR
+body.active-menu {
+    .banners {
+        @include breakpoint (sm) {
+            display: none;
+        }
+    }
+}
+
+.banners {
+    &__table-row {
+        padding-top: 19px;
+        padding-bottom: 19px;//height 58px
+        border-top: $border;
+        transition: 0.4s;
+        &:hover {
+            background-color: $table-hover;
+        }
+        &:hover {
+            .banners__table-icon-link, .banners__table-icon-trash {
+                visibility: visible;
+            }
+        }
+        @include breakpoint (sm) {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__table-row:nth-child(8) {
+        border-bottom: $border;
+    }
+
+    &__table-link-title {
+        padding-left: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include breakpoint (sm) {
+            padding-left: 0;
+        }
+    }
+
+    &__table-link {
+        padding-left: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include breakpoint (sm) {
+            padding-left: 0;
+        }
+    }
+
+    &__table-icons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        @include breakpoint (sm) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    &__table-icon-link {
+        margin-left: 40px;
+        font-size: 15px;
+        visibility: hidden;
+        transition: 0ms;
+        color: $link-color;
+        &:hover {
+            color: $link-color-hover;
+        }
+        @include breakpoint (sm) {
+            visibility: visible;
+            margin-right: 13%;
+            margin-left: 0;
+        }
+    }
+
+    &__table-icon-trash {
+        margin-left: 20px;
+        font-size: 15px;
+        visibility: hidden;
+        transition: 0ms;
+        &:hover {
+            color: #000;
+        }
+        @include breakpoint (sm) {
+            visibility: visible;
+            margin-right: 13%;
+            margin-left: 0;
+        }
+    }
+}

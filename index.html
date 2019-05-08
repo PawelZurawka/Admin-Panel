@@ -16,43 +16,43 @@
         </div>
         <ul class="sidebar__list">
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#general">
+                <a class="sidebar__link" href="index.html">
                     <i class="icon icon-general sidebar__icon"></i>
                     <span class="sidebar__tab-name">General</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="details">
+                <a class="sidebar__link" href="#">
                     <i class="icon icon-details sidebar__icon"></i>
                     <span class="sidebar__tab-name">Details</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="links">
+                <a class="sidebar__link" href="#links">
                     <i class="icon icon-links sidebar__icon"></i>
                     <span class="sidebar__tab-name">Links</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="banners">
+                <a class="sidebar__link" href="banners.html">
                     <i class="icon icon-banners sidebar__icon"></i>
                     <span class="sidebar__tab-name">Banners</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="personal-data">
+                <a class="sidebar__link" href="#">
                     <i class="icon icon-personaldata sidebar__icon"></i>
                     <span class="sidebar__tab-name">Personal data</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="payout">
+                <a class="sidebar__link" href="#">
                     <i class="icon icon-payout sidebar__icon"></i>
                     <span class="sidebar__tab-name">Payout</span>
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="#" id="postback">
+                <a class="sidebar__link" href="#">
                     <i class="icon icon-postback sidebar__icon"></i>
                     <span class="sidebar__tab-name">Postback</span>
                 </a>
@@ -84,7 +84,7 @@
                 <i class="icon icon-profile header__profile-icon"></i>
                 <a href="#" class="link--small header__profile-name">leonardo dicaprio</a>
             </li>
-            <button class="header__quit-button header__button">
+            <button class="header__quit-button header__button" id="quitBtn">
                 <i class="icon icon-quit header__quit-icon"></i>
             </button>
         </ul>
@@ -132,7 +132,7 @@
             </div>
         </div>
     </section>
-    <section class="links container--fluid">
+    <section class="links container--fluid" id="links">
         <div class="links__container container">
             <h2 class="links__header section__header-main-title">links</h2>
             <div class="links__button-wrapper">
@@ -263,7 +263,20 @@
             </div>
         </div>
     </section>
+    <!--MODALs-->
+    <div class="overlay" id="overlay">
+        <div class="quit-modal" id="myModal">
+            <div class="header-small quit-window-title">
+                Do you really want to Quit?
+            </div>
+            <div class="quit-window-buttons">
+                <button class="btn btn--primary js--close-modal">Cancel</button>
+                <button class="btn btn--secondary btn-quit js--close-modal">Quit</button>
+            </div>
+        </div>
+    </div>
     <script defer="" src="js/script.js"></script>
+    <script defer="" src="js/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 9</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__logo-wrapper">
+            <h1><img class="sidebar__logo" src="images/logo.png" alt="logo"></h1>
+            <button class="sidebar__hamburger-icon icon icon-hamburger" id="hamburger"></button>
+        </div>
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="index.html">
+                    <i class="icon icon-general sidebar__icon"></i>
+                    <span class="sidebar__tab-name">General</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-details sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Details</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#links">
+                    <i class="icon icon-links sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Links</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="banners.html">
+                    <i class="icon icon-banners sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Banners</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-personaldata sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Personal data</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-payout sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Payout</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-postback sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Postback</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar__manager">
+            <h2 class="sidebar__manager-header">your manager</h2>
+            <div class="sidebar__manager-wrapper">
+                <div class="sidebar__manager-photo">
+                    <img src="images/manager.png" alt="manager photo">
+                </div>
+                <p class="sidebar__manager-name"> mikhael e.</p>
+            </div>
+        </div>
+        <ul class="container--fluid header__list">
+            <li class="header__wallet">
+                <button class="header__wallet-button header__button">
+                    <i class="icon icon-wallet header__wallet-icon"></i>
+                    <span class="header__money">$1,500.00</span>
+                    <i class="icon icon-arrow-down header__arrow-icon"></i>
+                 </button>
+            </li>
+            <li class="header__notification">
+                <button class="header__notification-button header__button">
+                    <i class="icon icon-notification header__notification-icon"></i>
+                </button>
+            </li>
+            <li class="header__profile">
+                <i class="icon icon-profile header__profile-icon"></i>
+                <a href="#" class="link--small header__profile-name">leonardo dicaprio</a>
+            </li>
+            <button class="header__quit-button header__button" id="quitBtn">
+                <i class="icon icon-quit header__quit-icon"></i>
+            </button>
+        </ul>
+    </aside>
+    <section class="banners container--fluid" id="banners">
+        <div class="banners__container container">
+            <h2 class="banners__header section__header-main-title">banners</h2>
+            <div class="banners__button-wrapper">
+                <button class="banners__button btn btn--secondary">+ add new</button>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Banner main</div>
+                    <div class="banners__table-link col-7 col-sm-12 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/bannermain.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Sign up banner</div>
+                    <div class="banners__table-link col-7 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/signup.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Banner left side</div>
+                    <div class="banners__table-link col-7 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/leftside.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Vertical banner</div>
+                    <div class="banners__table-link col-7 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/vert.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Front banner</div>
+                    <div class="banners__table-link col-7 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/front.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__table-row container--small row">
+                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
+                    <div class="banners__table-link-title header-small col-5 col-sm-12">Horizontal banner</div>
+                    <div class="banners__table-link col-7 col-sm-12">
+                        <a href="#" class="link--large">http://www.website.com/horizontal.gif</a>
+                    </div>
+                </div>
+                <div class="banners__table-icons-wrapper col-2 col-sm-3">
+                    <i class="banners__table-icon-link icon icon-links"></i>
+                    <i class="banners__table-icon-trash icon icon-trash"></i>
+                </div>
+            </div>
+            <div class="banners__button-wrapper">
+                <button class="banners__button btn btn--secondary">+ add new</button>
+            </div>
+        </div>
+    </section>
+    <!--MODALS-->
+    <div class="overlay" id="overlay">
+        <div class="quit-modal" id="myModal">
+            <div class="header-small quit-window-title">
+                Do you really want to Quit?
+            </div>
+            <div class="quit-window-buttons">
+                <button class="btn btn--primary js--close-modal">Cancel</button>
+                <button class="btn btn--secondary btn-quit js--close-modal">Quit</button>
+            </div>
+        </div>
+    </div>
+    <script defer="" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</body>
+</html>
