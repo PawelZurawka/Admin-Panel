@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zadanie 9</title>
+    <title>Banners</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
@@ -60,7 +60,7 @@
         </ul>
         <div class="sidebar__manager">
             <h2 class="sidebar__manager-header">your manager</h2>
-            <div class="sidebar__manager-wrapper">
+            <div class="sidebar__manager-wrapper" id="chat-btn">
                 <div class="sidebar__manager-photo">
                     <img src="images/manager.png" alt="manager photo">
                 </div>
@@ -80,11 +80,11 @@
                     <i class="icon icon-notification header__notification-icon"></i>
                 </button>
             </li>
-            <li class="header__profile">
+            <li class="header__profile" id="login-btn">
                 <i class="icon icon-profile header__profile-icon"></i>
                 <a href="#" class="link--small header__profile-name">leonardo dicaprio</a>
             </li>
-            <button class="header__quit-button header__button" id="quitBtn">
+            <button class="header__quit-button header__button" id="quit-btn">
                 <i class="icon icon-quit header__quit-icon"></i>
             </button>
         </ul>
@@ -173,17 +173,47 @@
         </div>
     </section>
     <!--MODALS-->
+    <!--QUIT MODAL-->
     <div class="overlay" id="overlay">
-        <div class="quit-modal" id="myModal">
-            <div class="header-small quit-window-title">
-                Do you really want to Quit?
+            <div class="quit-modal" id="quitModal">
+                <div class="header-small quit-modal__title">
+                    Do you really want to Quit?
+                </div>
+                <div class="quit-modal__buttons">
+                    <button class="btn btn--primary js--close-modal">Cancel</button>
+                    <button class="btn btn--secondary quit-modal__btn-quit js--close-modal">Quit</button>
+                </div>
             </div>
-            <div class="quit-window-buttons">
-                <button class="btn btn--primary js--close-modal">Cancel</button>
-                <button class="btn btn--secondary btn-quit js--close-modal">Quit</button>
+        <!--LOGIN MODAL-->
+            <div class="login-modal" id="loginModal">
+                <div class="header-small login-modal__title">
+                    login
+                </div>
+                <form class="login-modal__form" action="" method="POST">
+                    <input class="login-modal__username" type="text" name="user-name" placeholder="login name">
+                    <input class="login-modal__password" type="password" name="user-password" placeholder="password">
+                    <button class="btn btn--secondary login-modal__btn js--close-modal">Enter</button>
+                </form>
+            </div>
+        <!--CHAT MODAL-->
+            <div class="chat-modal" id="chatModal">
+                <div class="chat-modal__btn-close js--close-modal">x</div>
+                <div class="header-small chat-modal__title">
+                        online chat with your personal manager
+                </div>
+                <div class="chat-modal__receiver">
+                    <img src="images/avatar-chat-modal.png" alt="chat-avatar" class="chat-modal__avatar">
+                    <p class="chat-modal__receiver-name">Michael E.</p>
+                </div>
+                <div class="chat-modal__output">
+                    <img src="images/chat.png" alt="chat" class=chat-modal__image>
+                </div>
+                <form class="chat-modal__form" action="" method="POST">
+                    <textarea class="chat-modal__message" type="text" name="message" placeholder="Enter the message..." rows="1"></textarea>
+                    <button class="btn btn--secondary chat-modal__btn js--close-modal">Send</button>
+                </form>
             </div>
         </div>
-    </div>
     <script defer="" src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </body>

@@ -23,29 +23,201 @@
 }
 
 //QUIT MODAL
+.quit-modal.show {
+    display: block;
+}
+
 .quit-modal {
     width: 360px;
     margin: auto;
     background-color: #FFF;
     position: relative;
     display: none;
+
+    &__title {
+        font-weight: $font-medium;
+        padding: 25px 20px;
+        border-bottom: $border;
+    }
+
+    &__buttons {
+        float: right;
+    }
+
+    &__btn-quit {
+        display: inline-block;
+        margin: 20px 20px;
+    }
 }
 
-.quit-modal.show {
+//LOGIN MODAL
+.login-modal.show {
     display: block;
 }
 
-.btn-quit {
-    display: inline-block;
-    margin: 20px 20px;
+.login-modal {
+    margin: auto;
+    background-color: #FFF;
+    position: relative;
+    display: none;
+
+    &__title {
+        font-weight: $font-medium;
+        padding: 12px 12px;
+        border-bottom: $border;
+        text-transform: uppercase;
+    }
+
+    &__form {
+        display: flex;
+        padding: 50px;
+        @include breakpoint (sm) {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        margin-left: 20px;
+        padding-left: 58px;
+        padding-right: 58px;
+        @include breakpoint (sm) {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__username {
+        background: url(../../images/login.svg) no-repeat;
+        background-position: 10px 8px;
+        padding-left: 40px;
+        margin-right: 20px;
+        background-size: 17px;
+        font-family: $font;
+        font-size: $paragraph-font-size;
+        font-weight: $font-light;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-radius: 3px;
+        border: $border;
+        @include breakpoint (sm) {
+                margin-right: 0;
+        }
+    }
+
+    &__password {
+        background: url(../../images/password.svg) no-repeat;
+        padding-left: 45px;
+        background-position: 10px 10px;
+        background-size: 22px;
+        margin-right: 0;
+        @extend .login-modal__username;
+        @include breakpoint (sm) {
+            padding-left: 40px;
+            border-top: none;
+        }   
+    }   
 }
 
-.quit-window-title {
-    font-weight: $font-medium;
-    padding: 25px 20px;
-    border-bottom: $border;
+//CHAT MODAL
+.chat-modal.show {
+    display: block;
 }
 
-.quit-window-buttons {
-    float: right;
+.chat-modal {
+    margin: auto;
+    background-color: #FFF;
+    position: relative;
+    display: none;
+    @include breakpoint (sm) {
+        width: 100%;
+    }
+
+    &__btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 15px;
+    }
+
+    &__title {
+        font-weight: $font-medium;
+        padding: 12px 12px;
+        border-bottom: $border;
+        text-transform: uppercase;
+    }
+
+    &__receiver {
+        display: flex;
+        align-items: center;
+        border-bottom: $border;
+    }
+
+    &__avatar {
+        margin-left: 12px;
+    }
+
+    &__receiver-name {
+       font-family: $font;
+       font-size: 30px;
+       font-weight: $font-medium;
+       margin-left: 20px;
+       margin-top: 20px;
+       padding-bottom: 15px;
+       position: relative;
+       &::after {
+           position: absolute;
+           content: "online";
+           background-color: $marked-checkbox;
+           font-size: 13px;
+           color: #FFF;
+           font-family: $font;
+           font-weight: $font-light;
+           padding: 3px;
+           padding-top: 5px;
+           border-radius: 3px;
+           left: 0;
+           top: 37px;;
+       }
+    }   
+    
+    &__output {
+        min-height: 300px;
+        //min-width: 500px;
+        border-bottom: $border;
+    }
+
+    &__image {
+        padding-left: 12px;
+    }
+
+    &__form {
+        display: flex;
+        padding: 20px;
+    }
+
+    &__message {
+        background: url(../../images/message.svg) no-repeat;
+        background-position: 10px 10px;
+        padding-left: 40px;
+        margin-right: 20px;
+        background-size: 17px;
+        font-family: $font;
+        font-size: $paragraph-font-size;
+        font-weight: $font-light;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-radius: 3px;
+        border: $border;
+        width: 700px;
+        @include breakpoint (sm) {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
