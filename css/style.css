@@ -2276,6 +2276,7 @@ body.active-menu .sidebar__manager-name:hover {
   .personal-data__form-block {
     margin-left: 15px;
     margin-right: 15px;
+    padding-top: 24px;
   }
 }
 
