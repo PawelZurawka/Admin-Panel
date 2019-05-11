@@ -1137,13 +1137,28 @@ body.active-menu .container--fluid {
   border-bottom: 1px solid #E3E3E3;
 }
 
+@media (max-width: 767px) {
+  .quit-modal__title {
+    text-align: center;
+  }
+}
+
 .quit-modal__buttons {
   float: right;
+  margin: 20px 20px;
+}
+
+@media (max-width: 767px) {
+  .quit-modal__buttons {
+    text-align: center;
+    float: none;
+  }
 }
 
 .quit-modal__btn-quit {
   display: inline-block;
-  margin: 20px 20px;
+  margin-left: 20px;
+  padding: 10px 31px;
 }
 
 .login-modal.show {
@@ -1187,6 +1202,8 @@ body.active-menu .container--fluid {
   .login-modal__btn {
     margin-left: 0;
     margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -1248,6 +1265,7 @@ body.active-menu .container--fluid {
   top: 0;
   right: 0;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .chat-modal__title {
@@ -1265,6 +1283,12 @@ body.active-menu .container--fluid {
 
 .chat-modal__avatar {
   margin-left: 12px;
+}
+
+@media (max-width: 767px) {
+  .chat-modal__avatar {
+    margin-left: 2px;
+  }
 }
 
 .chat-modal__receiver-name {
@@ -1301,9 +1325,22 @@ body.active-menu .container--fluid {
   padding-left: 12px;
 }
 
+@media (max-width: 767px) {
+  .chat-modal__image {
+    padding-left: 2px;
+    width: 250px;
+  }
+}
+
 .chat-modal__form {
   display: flex;
   padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .chat-modal__form {
+    padding: 10px;
+  }
 }
 
 .chat-modal__message {
@@ -1331,6 +1368,14 @@ body.active-menu .container--fluid {
 .chat-modal__btn {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .chat-modal__btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
 }
 
 /* Sections */
@@ -1879,7 +1924,7 @@ body.active-menu .sidebar__manager-name:hover {
   }
 }
 
-.statistic__header, .links__header, .banners__header {
+.statistic__header, .links__header, .banners__header, .personal-data__header {
   padding-top: 14.5px;
   padding-bottom: 14.5px;
   border-bottom: 1px solid #E3E3E3;
@@ -2089,6 +2134,12 @@ body.active-menu .sidebar__manager-name:hover {
 }
 
 @media (max-width: 767px) {
+  body.active-menu .banners {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
   .banners {
     display: inline-block;
   }
@@ -2098,12 +2149,6 @@ body.active-menu .sidebar__manager-name:hover {
   text-align: center;
   padding-top: 23.5px;
   padding-bottom: 23.5px;
-}
-
-@media (max-width: 767px) {
-  body.active-menu .banners {
-    display: none;
-  }
 }
 
 .banners__table-row {
@@ -2207,6 +2252,77 @@ body.active-menu .sidebar__manager-name:hover {
     margin-right: 13%;
     margin-left: 0;
   }
+}
+
+@media (max-width: 767px) {
+  body.active-menu .personal-data {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .personal-data {
+    display: inline-block;
+  }
+}
+
+.personal-data__form-block {
+  border-bottom: 1px solid #E3E3E3;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+@media (max-width: 767px) {
+  .personal-data__form-block {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+.personal-data__form-row {
+  width: 460px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.personal-data__form-row:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .personal-data__form-row {
+    width: 100%;
+  }
+}
+
+.personal-data__label {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.personal-data__input {
+  padding: 11px 13px;
+  color: #333;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #E3E3E3;
+  outline: none;
+}
+
+.personal-data__input:hover {
+  border: 1px solid black;
+}
+
+.personal-data__input:focus {
+  border: 2px solid #FF9A38;
+}
+
+.personal-data__button-wrapper {
+  text-align: center;
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

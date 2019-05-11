@@ -1,20 +1,4 @@
-.banners {
-    @include breakpoint (sm) { //NARROW SIDEBAR
-        display: inline-block;
-    } 
-
-    &__header {
-        @extend .statistic__header;
-    }
-    &__button-wrapper {
-        text-align: center;
-        padding-top: 23.5px;
-        padding-bottom: 23.5px;  //height 87px
-        
-    }
-}
-//NORMAL SIDEBAR
-body.active-menu {
+body.active-menu { //MOBILE
     .banners {
         @include breakpoint (sm) {
             display: none;
@@ -23,6 +7,20 @@ body.active-menu {
 }
 
 .banners {
+    @include breakpoint (sm) { //NARROW SIDEBAR
+        display: inline-block;
+    } 
+
+    &__header {
+        @extend .statistic__header;
+    }
+
+    &__button-wrapper {
+        text-align: center;
+        padding-top: 23.5px;
+        padding-bottom: 23.5px;  //height 87px
+    }
+
     &__table-row {
         padding-top: 19px;
         padding-bottom: 19px;//height 58px

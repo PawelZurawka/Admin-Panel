@@ -38,15 +38,24 @@
         font-weight: $font-medium;
         padding: 25px 20px;
         border-bottom: $border;
+        @include breakpoint (sm) {
+            text-align: center;
+        }
     }
 
     &__buttons {
         float: right;
+        margin: 20px 20px;
+        @include breakpoint (sm) {
+            text-align: center;
+            float: none;
+        }
     }
 
     &__btn-quit {
         display: inline-block;
-        margin: 20px 20px;
+        margin-left: 20px;
+        padding: 10px 31px;
     }
 }
 
@@ -85,6 +94,8 @@
         @include breakpoint (sm) {
             margin-left: 0;
             margin-top: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
         }
     }
 
@@ -139,6 +150,7 @@
         top: 0;
         right: 0;
         padding: 10px 15px;
+        cursor: pointer;
     }
 
     &__title {
@@ -156,6 +168,9 @@
 
     &__avatar {
         margin-left: 12px;
+        @include breakpoint (sm) {
+            margin-left: 2px;
+        }
     }
 
     &__receiver-name {
@@ -190,11 +205,18 @@
 
     &__image {
         padding-left: 12px;
+        @include breakpoint (sm) {
+            padding-left: 2px;
+            width: 250px;
+        }
     }
 
     &__form {
         display: flex;
         padding: 20px;
+        @include breakpoint (sm) {
+            padding: 10px;
+        }
     }
 
     &__message {
@@ -219,5 +241,10 @@
     &__btn {
         padding-left: 30px;
         padding-right: 30px;
+        @include breakpoint (sm) {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 16px;
+        }
     }
 }

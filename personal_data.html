@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Banners</title>
+    <title>Personal data</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="sidebar__item">
-                <a class="sidebar__link" href="personal_data.html">
+                <a class="sidebar__link" href="#">
                     <i class="icon icon-personaldata sidebar__icon"></i>
                     <span class="sidebar__tab-name">Personal data</span>
                 </a>
@@ -89,86 +89,61 @@
             </button>
         </ul>
     </aside>
-    <section class="banners container--fluid" id="banners">
-        <div class="banners__container container">
-            <h2 class="banners__header section__header-main-title">banners</h2>
-            <div class="banners__button-wrapper">
-                <button class="banners__button btn btn--secondary">+ add new</button>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Banner main</div>
-                    <div class="banners__table-link col-7 col-sm-12 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/bannermain.gif</a>
+    <section class="personal-data container--fluid" id="personal-data">
+        <div class="personal-data__container container">
+            <h2 class="personal-data__header section__header-main-title">personal data</h2>
+            <form method="POST" action="" class="personal-data__form">
+                <div class="personal-data__form-block">
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">name</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="text" name="name" value="Leonardo">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">surname</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="text" name="surname" value="Dicaprio">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">e-mail</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="email" name="email" value="leo@gmail.com">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">phone number</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="tel" name="phone" value="+1 432 555 00 44">
                     </div>
                 </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Sign up banner</div>
-                    <div class="banners__table-link col-7 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/signup.gif</a>
+                <div class="personal-data__form-block">
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">skype</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="text" name="skype" value="Leonardo.D">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">ICQ</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="text" name="icq">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">msn</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="tel" name="msn">
                     </div>
                 </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Banner left side</div>
-                    <div class="banners__table-link col-7 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/leftside.gif</a>
+                <div class="personal-data__form-block">
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">wallet</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="number" name="wallet">
                     </div>
                 </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Vertical banner</div>
-                    <div class="banners__table-link col-7 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/vert.gif</a>
+                <div class="personal-data__form-block">
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">password</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="password" name="password">
+                    </div>
+                    <div class="personal-data__form-row row">
+                        <label class="col-4 col-sm-12 personal-data__label">repeat</label>
+                        <input class="col-8 col-sm-12 personal-data__input" type="password" name="repeat-password">
                     </div>
                 </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Front banner</div>
-                    <div class="banners__table-link col-7 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/front.gif</a>
-                    </div>
-                </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__table-row container--small row">
-                <div class="banners__table-two-columns-wrapper col-10 col-sm-9 row">
-                    <div class="banners__table-link-title header-small col-5 col-sm-12">Horizontal banner</div>
-                    <div class="banners__table-link col-7 col-sm-12">
-                        <a href="#" class="link--large">http://www.website.com/horizontal.gif</a>
-                    </div>
-                </div>
-                <div class="banners__table-icons-wrapper col-2 col-sm-3">
-                    <i class="banners__table-icon-link icon icon-links"></i>
-                    <i class="banners__table-icon-trash icon icon-trash"></i>
-                </div>
-            </div>
-            <div class="banners__button-wrapper">
-                <button class="banners__button btn btn--secondary">+ add new</button>
+            </form>
+            <div class="personal-data__button-wrapper">
+                <button class="personal-data__button btn btn--secondary">Save</button>
             </div>
         </div>
     </section>
