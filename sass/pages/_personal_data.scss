@@ -15,51 +15,6 @@ body.active-menu { //MOBILE
         @extend .statistic__header;
     }
 
-    &__form-block {
-        border-bottom: $border;
-        padding-top: 42px;
-        padding-bottom: 42px;
-        @include breakpoint (sm) {
-            margin-left: 15px;
-            margin-right: 15px;
-            padding-top: 24px;
-        } 
-    }
-
-    &__form-row {
-        width: 460px;
-        align-items: center;
-        margin: 0 auto;
-        margin-top: 15px;
-        &:first-child {
-            margin-top: 0;
-        }
-        @include breakpoint (sm) {
-            width: 100%;
-        } 
-    }
-
-    &__label {
-        font-size: $header-font-size;
-        font-weight: $font-bold;
-        text-transform: capitalize;
-    }
-
-    &__input {
-        padding: 11px 13px;
-        color: $paragraph-color;
-        font-size: $paragraph-font-size;
-        border-radius: 3px;
-        border: $border;
-        outline: none;
-        &:hover {
-            border: 1px solid black;
-        }
-        &:focus {
-            border: 2px solid #FF9A38;
-        }
-    }
-
     &__button-wrapper {
         text-align: center;
         padding-top: 23.5px;
@@ -67,3 +22,4 @@ body.active-menu { //MOBILE
         
     }
 }
+//Rest in components form.scss

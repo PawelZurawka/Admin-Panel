@@ -471,6 +471,28 @@ body.active-menu .container--fluid { width: calc(100% - 188px); margin-left: 188
 
 @media (max-width: 767px) { .chat-modal__btn { padding-left: 10px; padding-right: 10px; font-size: 16px; } }
 
+.personal-data__form-block { border-bottom: 1px solid #E3E3E3; padding-top: 42px; padding-bottom: 42px; }
+
+@media (max-width: 767px) { .personal-data__form-block { margin-left: 15px; margin-right: 15px; padding-top: 24px; } }
+
+.personal-data__form-row { width: 460px; -ms-flex-align: center; align-items: center; margin: 0 auto; margin-top: 15px; }
+
+.personal-data__form-row:first-child { margin-top: 0; }
+
+@media (max-width: 767px) { .personal-data__form-row { width: 100%; } }
+
+.personal-data__label { font-size: 16px; font-weight: 700; text-transform: capitalize; }
+
+.personal-data__input { padding: 11px 13px; color: #333; font-size: 14px; border-radius: 3px; border: 1px solid #E3E3E3; outline: none; }
+
+.personal-data__input:hover { border: 1px solid black; }
+
+.personal-data__input:focus { border: 2px solid #FF9A38; }
+
+.personal-data__input:-ms-input-placeholder { font-size: 12px; font-weight: 300; }
+
+.personal-data__input::placeholder { font-size: 12px; font-weight: 300; }
+
 /* Sections */
 .header__list { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; margin-top: 0; padding-right: 0; margin-bottom: 0; border-bottom: 1px solid #E3E3E3; color: #9c9c9c; background-color: #FFF; }
 
@@ -782,23 +804,5 @@ body.active-menu .sidebar__manager-name:hover { color: #FFA200; }
 @media (max-width: 767px) { body.active-menu .personal-data { display: none; } }
 
 @media (max-width: 767px) { .personal-data { display: inline-block; } }
-
-.personal-data__form-block { border-bottom: 1px solid #E3E3E3; padding-top: 42px; padding-bottom: 42px; }
-
-@media (max-width: 767px) { .personal-data__form-block { margin-left: 15px; margin-right: 15px; padding-top: 24px; } }
-
-.personal-data__form-row { width: 460px; -ms-flex-align: center; align-items: center; margin: 0 auto; margin-top: 15px; }
-
-.personal-data__form-row:first-child { margin-top: 0; }
-
-@media (max-width: 767px) { .personal-data__form-row { width: 100%; } }
-
-.personal-data__label { font-size: 16px; font-weight: 700; text-transform: capitalize; }
-
-.personal-data__input { padding: 11px 13px; color: #333; font-size: 14px; border-radius: 3px; border: 1px solid #E3E3E3; outline: none; }
-
-.personal-data__input:hover { border: 1px solid black; }
-
-.personal-data__input:focus { border: 2px solid #FF9A38; }
 
 .personal-data__button-wrapper { text-align: center; padding-top: 23.5px; padding-bottom: 23.5px; }
