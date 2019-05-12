@@ -112,8 +112,15 @@
         padding-bottom: 11px;
         border-radius: 3px;
         border: $border;
+        outline: none;
         @include breakpoint (sm) {
                 margin-right: 0;
+        }
+        &:hover {
+            border: 1px solid black;
+        }
+        &:focus {
+            border: 2px solid #FF9A38;
         }
     }
 
@@ -233,8 +240,15 @@
         border-radius: 3px;
         border: $border;
         width: 700px;
+        outline: none;
         @include breakpoint (sm) {
             width: 100%;
+        }
+        &:hover {
+            border: 1px solid black;
+        }
+        &:focus {
+            border: 2px solid #FF9A38;
         }
     }
 
