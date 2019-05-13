@@ -489,9 +489,9 @@ body.active-menu .container--fluid { width: calc(100% - 188px); margin-left: 188
 
 .personal-data__input:focus { border: 2px solid #FF9A38; }
 
-.personal-data__input:-ms-input-placeholder { font-size: 12px; font-weight: 300; }
+.personal-data__input:-ms-input-placeholder { font-size: 12px; font-weight: 300; color: #a6a6a6; }
 
-.personal-data__input::placeholder { font-size: 12px; font-weight: 300; }
+.personal-data__input::placeholder { font-size: 12px; font-weight: 300; color: #a6a6a6; }
 
 /* Sections */
 .header__list { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; margin-top: 0; padding-right: 0; margin-bottom: 0; border-bottom: 1px solid #E3E3E3; color: #9c9c9c; background-color: #FFF; }
