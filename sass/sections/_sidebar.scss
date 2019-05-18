@@ -111,6 +111,7 @@
 
     &__manager-wrapper {
         padding-bottom: 0;
+        cursor: pointer;
     }
 
     &__manager-photo {
@@ -139,7 +140,7 @@ body.active-menu {
         width: 188px;
         @include breakpoint (sm) {
             width: 100vw;
-            height: 100vh; 
+            height: 100vh;
         }
 
         &__list {

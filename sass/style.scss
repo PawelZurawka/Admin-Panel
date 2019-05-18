@@ -5,7 +5,6 @@
 @import "basic-styles";
 
 /* Components */
-@import "components/form_field";
 @import "components/buttons";
 @import "components/icons";
 @import "components/containers";
@@ -17,12 +16,10 @@
 
 
 /* Sections */
-@import "sections/registration_form";
 @import "sections/top-bar";
 @import "sections/sidebar";
 
 /* Pages / Views */
-@import "pages/registration";
 @import "pages/general-statistic";
 @import "pages/links-page";
 @import "pages/banners";

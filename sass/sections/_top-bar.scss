@@ -1,14 +1,10 @@
 .header {
     &__list {
-    //position: fixed;
     display: flex;
     justify-content: flex-end;
-    //top: 0;
-    //height: 60px; //62 but 2px is border
     margin-top: 0;
     padding-right: 0;
     margin-bottom: 0;
-    //overflow: hidden;
     border-bottom: $border;
     color: $icon-color;
     background-color: $section-bg-color;

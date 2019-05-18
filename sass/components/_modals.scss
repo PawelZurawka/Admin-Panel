@@ -113,6 +113,7 @@
         border-radius: 3px;
         border: $border;
         outline: none;
+        cursor: pointer;
         @include breakpoint (sm) {
                 margin-right: 0;
         }
@@ -206,18 +207,28 @@
     
     &__output {
         min-height: 300px;
-        //min-width: 500px;
         border-bottom: $border;
     }
 
-    &__image {
-        padding-left: 12px;
-        @include breakpoint (sm) {
-            padding-left: 2px;
-            width: 250px;
+    &__output-sender {
+        width: fit-content;
+        background-color: $tab-bg-color-hover;
+        font-weight: $font-light;
+        margin-left: 20px;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        @include breakpoint(sm) {
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 
+    &__output-receiver {
+        background-color: $btn-primary-hover;
+        color:#FFF;
+        @extend .chat-modal__output-sender;
+    }
     &__form {
         display: flex;
         padding: 20px;
@@ -228,22 +239,19 @@
 
     &__message {
         background: url(../images/message.svg) no-repeat;
-        background-position: 10px 10px;
+        background-position: 10px 16px;
         padding-left: 40px;
         margin-right: 20px;
         background-size: 17px;
         font-family: $font;
         font-size: $paragraph-font-size;
         font-weight: $font-light;
-        padding-top: 11px;
-        padding-bottom: 11px;
+        padding-top: 17px;
         border-radius: 3px;
         border: $border;
         width: 700px;
         outline: none;
-        @include breakpoint (sm) {
-            width: 100%;
-        }
+        cursor: pointer;
         &:hover {
             border: 1px solid black;
         }

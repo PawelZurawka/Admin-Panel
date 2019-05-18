@@ -1221,6 +1221,7 @@ body.active-menu .container--fluid {
   border-radius: 3px;
   border: 1px solid #E3E3E3;
   outline: none;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -1330,15 +1331,26 @@ body.active-menu .container--fluid {
   border-bottom: 1px solid #E3E3E3;
 }
 
-.chat-modal__image {
-  padding-left: 12px;
+.chat-modal__output-sender, .chat-modal__output-receiver {
+  width: fit-content;
+  background-color: #F3F3F1;
+  font-weight: 300;
+  margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
 }
 
 @media (max-width: 767px) {
-  .chat-modal__image {
-    padding-left: 2px;
-    width: 250px;
+  .chat-modal__output-sender, .chat-modal__output-receiver {
+    margin-left: 10px;
+    margin-right: 10px;
   }
+}
+
+.chat-modal__output-receiver {
+  background-color: #BABABA;
+  color: #FFF;
 }
 
 .chat-modal__form {
@@ -1354,25 +1366,19 @@ body.active-menu .container--fluid {
 
 .chat-modal__message {
   background: url(../images/message.svg) no-repeat;
-  background-position: 10px 10px;
+  background-position: 10px 16px;
   padding-left: 40px;
   margin-right: 20px;
   background-size: 17px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 17px;
   border-radius: 3px;
   border: 1px solid #E3E3E3;
   width: 700px;
   outline: none;
-}
-
-@media (max-width: 767px) {
-  .chat-modal__message {
-    width: 100%;
-  }
+  cursor: pointer;
 }
 
 .chat-modal__message:hover {
@@ -1440,6 +1446,7 @@ body.active-menu .container--fluid {
   border-radius: 3px;
   border: 1px solid #E3E3E3;
   outline: none;
+  cursor: pointer;
 }
 
 .personal-data__input:hover {
@@ -1856,6 +1863,7 @@ body.active-menu .header__list {
 
 .sidebar__manager-wrapper {
   padding-bottom: 0;
+  cursor: pointer;
 }
 
 .sidebar__manager-photo {
@@ -2155,44 +2163,6 @@ body.active-menu .sidebar__manager-name:hover {
   }
 }
 
-/*&__chart-buttons {
-        display: flex; //??flex-wrap: nowrap;
-        justify-content: space-evenly;
-        margin-bottom: 55px;
-    }
-
-     &__chart-button {
-        position: relative;
-        font-size: $header-font-size;
-        color: $main-font-color;
-        background-color:#FFF;
-        padding: 10px 15px 10px 40px;
-        &:hover {
-            background-color: $tab-bg-color-hover;
-        }
-    }
-
-    &__chart-image {
-        margin-left: 20px;
-    }
-
-    &__chart-button-first::before {
-        @include before-chart-buttons;
-        background-color: $tab-blue;
-    }
-
-
-    &__chart-button-second::before {
-        @include before-chart-buttons;
-        background-color: $tab-orange;
-    }
-
-    &__chart-button-third::before {
-        @include before-chart-buttons;
-        background-color: $tab-green;
-    }
-
-}*/
 @media (max-width: 767px) {
   .links {
     display: inline-block;
