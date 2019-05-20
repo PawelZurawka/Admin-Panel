@@ -128,13 +128,12 @@
     &__password {
         background: url(../images/password.svg) no-repeat;
         padding-left: 45px;
-        background-position: 10px 10px;
+        background-position: 10px 12px;
         background-size: 22px;
         margin-right: 0;
         @extend .login-modal__username;
         @include breakpoint (sm) {
             padding-left: 40px;
-            border-top: none;
         }   
     }   
 }
@@ -211,7 +210,9 @@
     }
 
     &__output-sender {
-        width: fit-content;
+        //width: fit-content;
+        width: auto;
+        display: inline-block;
         background-color: $tab-bg-color-hover;
         font-weight: $font-light;
         margin-left: 20px;

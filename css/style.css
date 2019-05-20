@@ -1241,7 +1241,7 @@ body.active-menu .container--fluid {
 .login-modal__password {
   background: url(../images/password.svg) no-repeat;
   padding-left: 45px;
-  background-position: 10px 10px;
+  background-position: 10px 12px;
   background-size: 22px;
   margin-right: 0;
 }
@@ -1249,7 +1249,6 @@ body.active-menu .container--fluid {
 @media (max-width: 767px) {
   .login-modal__password {
     padding-left: 40px;
-    border-top: none;
   }
 }
 
@@ -1332,7 +1331,8 @@ body.active-menu .container--fluid {
 }
 
 .chat-modal__output-sender, .chat-modal__output-receiver {
-  width: fit-content;
+  width: auto;
+  display: inline-block;
   background-color: #F3F3F1;
   font-weight: 300;
   margin-left: 20px;
@@ -1745,6 +1745,7 @@ body.active-menu .header__list {
   justify-content: flex-start;
   background-color: #191919;
   transition: 0.4s;
+  overflow-y: auto;
 }
 
 @media (max-width: 767px) {
@@ -1798,7 +1799,6 @@ body.active-menu .header__list {
   border-bottom: 1px solid #333;
   padding-left: 0px;
   padding-bottom: 24px;
-  overflow: hidden;
 }
 
 @media (max-width: 767px) {

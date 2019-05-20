@@ -11,6 +11,7 @@
     justify-content: flex-start;
     background-color: $sidebar-bg-color;
     transition: 0.4s;
+    overflow-y: auto;
     @include breakpoint (sm) {
         height: 60px;
         width: 100%;
@@ -53,7 +54,6 @@
         border-bottom: $border-sidebar;
         padding-left: 0px;
         padding-bottom: 24px;
-        overflow: hidden;
         @include breakpoint (sm) {
             display: none;
         }
