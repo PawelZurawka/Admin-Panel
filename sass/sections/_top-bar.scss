@@ -90,7 +90,6 @@
     &__profile {
         border-right: $border;
         display: flex;
-        padding: 20px;
         align-items: center;
         transition: 0.4s;
         cursor: pointer;
@@ -106,7 +105,10 @@
             }
         }
     }
-
+    &__profile-button {
+        padding: 20px;
+    }
+    
     &__profile-icon {
         font-size: 17px;
     }
