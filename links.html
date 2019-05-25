@@ -60,12 +60,12 @@
         </ul>
         <div class="sidebar__manager">
             <h2 class="sidebar__manager-header">your manager</h2>
-            <div class="sidebar__manager-wrapper open-modal-btn" id="chat-btn">
-                <div class="sidebar__manager-photo">
-                    <img src="images/manager.png" alt="manager photo">
-                </div>
-                <p class="sidebar__manager-name"> mikhael e.</p>
-            </div>
+            <button href="#chatModal" class="sidebar__manager-button open-modal-btn">        
+                <span class="sidebar__manager-photo">
+                <img src="images/manager.png" alt="manager photo">
+                </span>
+                <span class="sidebar__manager-name"> mikhael e.</p>
+            </button>
         </div>
         <ul class="container--fluid header__list">
             <li class="header__wallet">
@@ -80,13 +80,17 @@
                     <i class="icon icon-notification header__notification-icon"></i>
                 </button>
             </li>
-            <li class="header__profile open-modal-btn" id="login-btn">
-                <i class="icon icon-profile header__profile-icon"></i>
-                <a href="#" class="link--small header__profile-name">leonardo dicaprio</a>
+            <li class="header__profile">
+                <button href="#loginModal" class="header__profile-button header__button open-modal-btn">
+                    <i class="icon icon-profile header__profile-icon"></i>
+                    <span class="header__profile-name link--small">leonardo dicaprio</span>
+                </button>
             </li>
-            <button class="header__quit-button header__button open-modal-btn" id="quit-btn">
-                <i class="icon icon-quit header__quit-icon"></i>
-            </button>
+            <li class="header__quit">
+                <button href="#quitModal" class="header__quit-button header__button open-modal-btn">
+                    <i class="icon icon-quit header__quit-icon"></i>
+                </button>
+            </li>
         </ul>
     </aside>
     <main>
@@ -225,7 +229,7 @@
     <!--MODALS-->
     <!--QUIT MODAL-->
     <div class="overlay" id="overlay">
-        <div class="quit-modal" id="quitModal">
+        <div class="quit-modal modal" id="quitModal">
             <div class="header-small quit-modal__title">
                 Do you really want to Quit?
             </div>
@@ -235,7 +239,7 @@
             </div>
         </div>
     <!--LOGIN MODAL-->
-        <div class="login-modal" id="loginModal">
+        <div class="login-modal modal" id="loginModal">
             <div class="header-small login-modal__title">
                 login
             </div>
@@ -246,7 +250,7 @@
             </form>
         </div>
     <!--CHAT MODAL-->
-        <div class="chat-modal" id="chatModal">
+        <div class="chat-modal modal" id="chatModal">
             <div class="chat-modal__btn-close js--close-modal">x</div>
             <div class="header-small chat-modal__title">
                     online chat with your personal manager

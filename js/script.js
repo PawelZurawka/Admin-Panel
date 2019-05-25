@@ -52,56 +52,22 @@ document.addEventListener('keyup', function(e) {
     closeModal();
   }
 });
-//OPEN MODAL
-function openModal(modal) {
-  document.querySelectorAll('#overlay > *').forEach(function(modal) {
-    modal.classList.remove('show');
-  });
-  document.querySelector('#overlay').classList.add ('show');
-  document.querySelector(modal).classList.add('show');
-}
-//każdy guzik ma jedną klasę.open-modal-btn oraz id:chat-btn,login-btn,quit-btn
-//każdy modal ma swoje id:quitModal, loginModal, chatModal
-//LOOP FOR OPEN MODAL BUTTONS
-var buttons = document.querySelectorAll('.open-modal-btn');
-for (var i = 0; i < buttons.length; i++) {
-  var button = buttons[i];
-  console.log(button);
-  button.addEventListener('click', function(event) {
-    event.preventDefault();
-    myAwesomeFunction(this);
-    console.log(button);
-    }, false);
-}
 
-var myAwesomeFunction = function() {
-  
+//LOOP FOR OPEN MODAL BUTTONS
+var modals = document.querySelectorAll('.modal');
+var overlay = document.querySelector('#overlay');
+
+var showModal = function(event) {
+  event.preventDefault();
+  for (var i = 0; i < modals.length; i++) {
+    modals[i].classList.remove('show');
+  }
+  document.querySelector(this.getAttribute('href')).classList.add('show');
+  overlay.classList.add('show');
 };
 
-//var quitBtn = document.getElementById('quit-btn');
-//var loginBtn = document.getElementById('login-btn');
-//var chatBtn = document.getElementById('chat-btn')
+var buttons = document.querySelectorAll('.open-modal-btn');
 
-//"QUIT" MODAL
-/*quitBtn.addEventListener('click', function() {
-  openModal('#quitModal');
-});
-//LOGIN MODAL
-loginBtn.addEventListener('click', function() {
-  openModal('#loginModal');
-});
-//CHAT MODAL
-chatBtn.addEventListener('click', function() {
-  openModal('#chatModal');
-});*/
-
-/*var modalButtons = document.querySelectorAll('.open-modal-btn');
-for (var i = 0; i < modalButtons.length; i++) {
-  var self = modalButtons[i];
-
-  self.addEventListener('click', function (event) {
-    event.preventDefault();
-    openModal(this);
-  }, false);
+for(var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', showModal);
 }
-console.log(modalButtons);*/

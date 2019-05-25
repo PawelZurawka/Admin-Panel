@@ -108,14 +108,17 @@
         display: none;
     }
 
-    &__manager-wrapper {
-        padding-bottom: 0;
-        cursor: pointer;
+    &__manager-button {
+        position: relative;
+        width: 100%;
+        background-color: $sidebar-bg-color;
+        border: none;
+        outline: none;
     }
 
     &__manager-photo {
+        display: block;
         transform: scale(0.6);
-        margin-left: 5px;
         &::after {
             position: absolute;
             content: "";
@@ -181,11 +184,15 @@ body.active-menu {
                 margin-top: 5px;
             }
         }
-        
-        &__manager-wrapper {
+
+        &__manager-button {
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            background-color: $sidebar-bg-color;
+            border: none;
+            outline: none;
+            padding: 0;
             cursor: pointer;
             transition: 0.4s;
             &:hover {
@@ -235,6 +242,7 @@ body.active-menu {
             text-transform: capitalize;
             margin-left: 10px;
             font-size: $paragraph-font-size;
+            padding-top: 14px;
         }
     }
 }
