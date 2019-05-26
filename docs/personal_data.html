@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal data</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar__logo-wrapper">
+            <h1><img class="sidebar__logo" src="images/logo.png" alt="logo"></h1>
+            <button class="sidebar__hamburger-icon icon icon-hamburger" id="hamburger"></button>
+        </div>
+        <ul class="sidebar__list">
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="index.html">
+                    <i class="icon icon-general sidebar__icon"></i>
+                    <span class="sidebar__tab-name">General</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-details sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Details</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="links.html">
+                    <i class="icon icon-links sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Links</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="banners.html">
+                    <i class="icon icon-banners sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Banners</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-personaldata sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Personal data</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-payout sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Payout</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="sidebar__link" href="#">
+                    <i class="icon icon-postback sidebar__icon"></i>
+                    <span class="sidebar__tab-name">Postback</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar__manager">
+            <h2 class="sidebar__manager-header">your manager</h2>
+            <a href="#chatModal" class="sidebar__manager-button open-modal-btn">        
+                <span class="sidebar__manager-photo">
+                    <img src="images/manager.png" alt="manager photo">
+                </span>
+                <span class="sidebar__manager-name"> mikhael e.</span>
+            </a>
+        </div>
+        <ul class="container--fluid header__list">
+            <li class="header__wallet">
+                <button class="header__wallet-button header__button">
+                    <i class="icon icon-wallet header__wallet-icon"></i>
+                    <span class="header__money">$1,500.00</span>
+                    <i class="icon icon-arrow-down header__arrow-icon"></i>
+                 </button>
+            </li>
+            <li class="header__notification">
+                <button class="header__notification-button header__button">
+                    <i class="icon icon-notification header__notification-icon"></i>
+                </button>
+            </li>
+            <li class="header__profile">
+                <a href="#loginModal" class="header__profile-button header__button open-modal-btn">
+                    <i class="icon icon-profile header__profile-icon"></i>
+                    <span class="header__profile-name link--small">leonardo dicaprio</span>
+                </a>
+            </li>
+            <li class="header__quit">
+                <a href="#quitModal" class="header__quit-button header__button open-modal-btn">
+                    <i class="icon icon-quit header__quit-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <section class="personal-data container--fluid" id="personal-data">
+            <div class="personal-data__container container">
+                <h2 class="personal-data__header section__header-main-title">personal data</h2>
+                <form method="POST" action="#" class="personal-data__form">
+                    <div class="personal-data__form-block">
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="name">name</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="name" type="text" name="name" value="Leonardo" required placeholder="Type your name(required)">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="surname">surname</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="surname" type="text" name="surname" value="Dicaprio" required placeholder="Type surname(required)">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="email">e-mail</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="email" type="email" name="email" value="leo@gmail.com" required placeholder="Type your e-mail(required)">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="phonenumber">phone number</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="phonenumber" type="tel" name="phone" value="+1 432 555 00 44" required placeholder="Type your phone number(required)">
+                        </div>
+                    </div>
+                    <div class="personal-data__form-block">
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="skype">skype</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="skype" type="text" name="skype" value="Leonardo.D" placeholder="Type your Skype">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="icq">ICQ</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="icq" type="text" name="icq" placeholder="Type your ICQ">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="msn">msn</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="msn" type="text" name="msn" placeholder="Type your MSN">
+                        </div>
+                    </div>
+                    <div class="personal-data__form-block">
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="wallet">wallet</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="wallet" type="number" name="wallet" placeholder="Type the amount of $$$">
+                        </div>
+                    </div>
+                    <div class="personal-data__form-block">
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="password">password</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id="password" type="password" name="password" required placeholder="Type your password(required)">
+                        </div>
+                        <div class="personal-data__form-row row">
+                            <label class="col-4 col-sm-12 personal-data__label" for="repassword">repeat</label>
+                            <input class="col-8 col-sm-12 personal-data__input" id='repassword' type="password" name="repeat-password" required placeholder="Repeat your password(required)">
+                        </div>
+                    </div>
+                </form>
+                <div class="personal-data__button-wrapper">
+                    <button class="personal-data__button btn btn--secondary">Save</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--MODALS-->
+    <!--QUIT MODAL-->
+    <div class="overlay" id="overlay">
+            <div class="quit-modal modal" id="quitModal">
+                <div class="header-small quit-modal__title">
+                    Do you really want to Quit?
+                </div>
+                <div class="quit-modal__buttons">
+                    <button class="btn btn--primary js--close-modal">Cancel</button>
+                    <button class="btn btn--secondary quit-modal__btn-quit js--close-modal">Quit</button>
+                </div>
+            </div>
+        <!--LOGIN MODAL-->
+            <div class="login-modal modal" id="loginModal">
+                <div class="header-small login-modal__title">
+                    login
+                </div>
+                <form class="login-modal__form" action="#" method="POST">
+                    <input class="login-modal__username" type="text" name="user-name" placeholder="login name">
+                    <input class="login-modal__password" type="password" name="user-password" placeholder="password">
+                    <button class="btn btn--secondary login-modal__btn js--close-modal">Enter</button>
+                </form>
+            </div>
+        <!--CHAT MODAL-->
+            <div class="chat-modal modal" id="chatModal">
+                <div class="chat-modal__btn-close js--close-modal">x</div>
+                <div class="header-small chat-modal__title">
+                        online chat with your personal manager
+                </div>
+                <div class="chat-modal__receiver">
+                    <img src="images/avatar-chat-modal.png" alt="chat-avatar" class="chat-modal__avatar">
+                    <p class="chat-modal__receiver-name">Michael E.</p>
+                </div>
+                <div class="chat-modal__output">
+                    <p class="chat-modal__output-sender">Hello. Can I help you?</p>
+                    <p class="chat-modal__output-receiver">Hello! I would like to know about Postback.</p>
+                    <p class="chat-modal__output-sender">Ok. 5 min.</p>
+                </div>
+                <form class="chat-modal__form" action="#" method="POST">
+                    <textarea class="chat-modal__message" name="message" placeholder="Enter the message..."></textarea>
+                    <button class="btn btn--secondary chat-modal__btn js--close-modal">Send</button>
+                </form>
+            </div>
+        </div>
+    <script defer="" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "name": "individual project",
+  "name": "npmlearning",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,7 +21,9 @@
     "build:html-minifier": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true index.html -o docs/index.html",
     "copy:css": "cp -r css docs",
     "copy:js": "cp -r js docs",
-    "copy:assets": "cp -r assets docs",
+	"copy:fonts": "cp -r fonts docs",
+	"copy:images": "cp -r images docs",
+	"copy:htmls": "cp -r *html docs",
     "watch": "npm-run-all build-dev -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch:autoprefixer": "autoprefixer-cli css/style.css",
