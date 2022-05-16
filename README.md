@@ -1,2 +1,2 @@
-# Zadanie-9
-https://pawelzurawka.github.io/Zadanie-9/
+# Admin Panel
+https://pawelzurawka.github.io/Admin-Panel/
